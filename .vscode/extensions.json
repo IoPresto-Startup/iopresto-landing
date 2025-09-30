@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "vue.volar",
+        "bradlc.vscode-tailwindcss",
+        "rvest.vs-code-prettier-eslint",
+        "esbenp.prettier-vscode",
+        "codeandstuff.package-json-upgrade",
+        "xabikos.javascriptsnippets",
+        "dbaeumer.vscode-eslint",
+        "formulahendry.auto-rename-tag"
+    ]
+} 
