@@ -4,7 +4,7 @@
 			<NuxtImg src="/img/iopresto_logo_2.png" class="h-14" />
 		</template>
 
-		<UNavigationMenu :items="items" />
+		<UNavigationMenu :items="items" color="neutral" variant="link" :highlight="true" />
 
 		<template #right>
 			<UColorModeButton />
