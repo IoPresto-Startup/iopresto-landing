@@ -24,9 +24,9 @@ const items = computed<NavigationMenuItem[]>(() => [
 		active: route.path === "/"
 	},
 	{
-		label: "Contatti",
-		to: "/contatti",
-		active: route.path === "/contatti"
+		label: "Contattaci",
+		to: "/contattaci",
+		active: route.path === "/contattaci"
 	}
 ])
 </script>

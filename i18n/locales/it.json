@@ -31,4 +31,24 @@
 		"description": "Prendi in prestito, scambia e condividi oggetti usati, gratis e con semplicità",
 		"cta": "Inizia"
 	},
+	"contactForm": {
+		"title": "Contattaci",
+		"subtitle": "Hai bisogno di aiuto? Scrivici e ti risponderemo a breve.",
+		"name": "Nome",
+		"email": "Email",
+		"message": "Messaggio",
+		"submit": "Invia",
+		"sending": "Invio...",
+		"successTitle": "Messaggio inviato!",
+		"successDesc": "Grazie per averci contattato. Ti risponderemo presto.",
+		"openedClient": "Aperto client di posta. Controlla la tua app di posta per inviare il messaggio.",
+		"fallbackCopied": "Impossibile aprire il client di posta automaticamente. Testo copiato negli appunti.",
+		"errorGeneric": "Errore nell'invio",
+		"notice": "Verrai reindirizzato al tuo client di posta per completare l'invio.",
+		"errors": {
+			"name": "Inserisci almeno 2 caratteri",
+			"email": "Inserisci una email valida",
+			"message": "Il messaggio deve essere di almeno 10 caratteri"
+		}
+	}
 }
