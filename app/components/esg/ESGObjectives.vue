@@ -18,7 +18,7 @@
               <div class="flex-shrink-0">
                 <div
                   class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
-                  {{ sdg.number }}
+                  SDG {{ sdg.number }}
                 </div>
               </div>
 
