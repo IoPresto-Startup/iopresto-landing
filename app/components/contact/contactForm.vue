@@ -1,7 +1,6 @@
 <template>
-  <UCard class="mx-auto max-w-3xl p-8 bg-default/75 backdrop-blur rounded-2xl shadow-lg" role="region"
-    aria-label="Contatto iopresto">
-    <header class="mb-6 text-center">
+  <UCard class="p-8 bg-default rounded-xl shadow-lg" role="region" aria-label="Contatto iopresto">
+    <header class="mb-14">
       <h3 class="text-2xl font-bold ">{{ t('contactForm.title', 'Contattaci') }}</h3>
       <p class="text-sm ">
         {{ t('contactForm.subtitle', 'Hai bisogno di aiuto? Scrivici e ti risponderemo a breve.') }}
@@ -25,7 +24,7 @@
           class="w-full" />
       </UFormField>
 
-      <div class="pt-2">
+      <div class="pt-2 flex justify-center">
         <!-- Bottone con lo stile richiesto -->
         <UButton type="submit" :disabled="sending" size="xl" color="primary" variant="soft"
           class="border border-cyan-400 px-8 py-3 text-lg font-semibold backdrop-blur bg-white/10 hover:bg-cyan-500/30 transition-all"

@@ -45,10 +45,74 @@
 		"fallbackCopied": "Impossibile aprire il client di posta automaticamente. Testo copiato negli appunti.",
 		"errorGeneric": "Errore nell'invio",
 		"notice": "Verrai reindirizzato al tuo client di posta per completare l'invio.",
+		"infoTitle": "Invio messaggio",
+		"infoDesc": "Stai per essere reindirizzato alla tua applicazione email per completare l'invio. Nessun dato viene salvato.",
 		"errors": {
 			"name": "Inserisci almeno 2 caratteri",
 			"email": "Inserisci una email valida",
 			"message": "Il messaggio deve essere di almeno 10 caratteri"
+		}
+	},
+	"pageHero": {
+		"home": "Casa",
+		"pages": {
+			"esg": "ESG",
+			"contattaci": "Contattaci"
+		}
+	},
+	"esg": {
+		"intro": {
+			"title": "ESG",
+			"paragraph1": "L'impresa opera nel settore della sostenibilità e dell'economia circolare, con un focus specifico sulla promozione del riutilizzo e dello scambio di beni usati tra privati. L'obiettivo principale è ridurre l'impatto ambientale legato alla produzione e al consumo di oggetti a basso utilizzo. Negli ultimi anni, il tema della sostenibilità e della riduzione degli sprechi ha acquisito un ruolo centrale nelle agende di governi e organizzazioni a livello globale. In Italia, dove il consumo di beni è particolarmente elevato, emergono sfide significative legate all'eccesso di rifiuti e all'utilizzo efficiente delle risorse.",
+			"paragraph2": "Il modello tradizionale di consumo \"produci-usa-getta\" continua a prevalere, contribuendo a un accumulo significativo di rifiuti domestici. Secondo i dati dell'ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale), ogni cittadino italiano produce in media circa 499 kg di rifiuti all'anno, molti dei quali potrebbero essere riutilizzati. In questo contesto, iniziative e piattaforme che promuovono l'economia circolare stanno emergendo come soluzioni innovative per ridurre l'impatto ambientale."
+		},
+		"changes": {
+			"title": "Cambiamenti che vorremmo apportare con la community IOPRESTO",
+			"environmental": {
+				"title": "Cambiamenti ambientali",
+				"item1": "Diminuzione dei rifiuti",
+				"item2": "Riduzione dell'impronta ecologica"
+			},
+			"social": {
+				"title": "Cambiamenti sociali",
+				"item1": "Cultura del riuso",
+				"item2": "Integrazione sociale"
+			},
+			"economic": {
+				"title": "Cambiamenti economici",
+				"item1": "Nuovi modelli di consumo",
+				"item2": "Posizionamento competitivo"
+			},
+			"conclusion": "Con IOPRESTO, vogliamo costruire un futuro in cui il riutilizzo diventi la norma, non l'eccezione. Un futuro in cui ogni oggetto abbia una seconda vita e in cui le persone possano contribuire attivamente a creare un mondo più sostenibile e responsabile. Ambiamo a diventare un punto di riferimento nel settore delle startup sostenibili a Firenze, con l'obiettivo di estendere il nostro impatto in tutta la Toscana e, successivamente, a livello internazionale."
+		},
+		"sdgs": {
+			"title": "Obiettivi di sviluppo",
+			"subtitle": "IOPRESTO, con la sua piattaforma di scambio di oggetti usati e la promozione di un'economia circolare, può contribuire a diversi obiettivi di sviluppo sostenibile (SDGs) delle Nazioni Unite. Ecco i principali che potrebbe coprire:",
+			"sdg12": {
+				"title": "Consumo e produzione responsabili",
+				"description": "IOPRESTO promuove la riduzione dei rifiuti e il riutilizzo degli oggetti, contribuendo così a un modello di consumo più sostenibile. Lo scambio di oggetti usati riduce la necessità di produzione di nuovi beni, contribuendo a un uso più responsabile delle risorse naturali."
+			},
+			"sdg13": {
+				"title": "Lotta contro il cambiamento climatico",
+				"description": "Riducendo la produzione di nuovi oggetti e incentivando il riutilizzo, IOPRESTO contribuisce alla riduzione delle emissioni di carbonio legate alla produzione e al trasporto di beni, favorendo un impatto ambientale minore."
+			},
+			"sdg8": {
+				"title": "Lavoro dignitoso e crescita economica",
+				"description": "IOPRESTO crea opportunità per una crescita economica inclusiva e sostenibile, promuovendo una cultura di condivisione e scambio che riduce i costi per i consumatori e crea nuove dinamiche di business legate all'economia circolare."
+			},
+			"sdg9": {
+				"title": "Industria, innovazione e infrastruttura",
+				"description": "La piattaforma IOPRESTO è un esempio di innovazione tecnologica che favorisce lo sviluppo di un'infrastruttura digitale in grado di supportare l'economia circolare e la condivisione di beni a livello comunitario."
+			},
+			"sdg11": {
+				"title": "Città e comunità sostenibili",
+				"description": "IOPRESTO promuove una vita urbana più sostenibile, facilitando l'accesso a beni senza necessità di acquisto, e contribuendo a ridurre l'impronta ecologica delle città attraverso un modello di scambio di beni."
+			},
+			"sdg17": {
+				"title": "Partnership per gli obiettivi",
+				"description": "Collaborando con altre organizzazioni, aziende e ONG per promuovere la sostenibilità e l'economia circolare, IOPRESTO contribuisce al rafforzamento delle partnership globali per raggiungere gli obiettivi di sviluppo sostenibile."
+			},
+			"conclusion": "In sintesi, IOPRESTO è allineato principalmente con gli obiettivi 12 (Consumo e produzione responsabili), 13 (Lotta contro il cambiamento climatico) e 8 (Lavoro dignitoso e crescita economica), ma può avere un impatto positivo su molti altri obiettivi legati alla sostenibilità e all'inclusione economica."
 		}
 	}
 }

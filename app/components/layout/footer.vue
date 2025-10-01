@@ -13,7 +13,7 @@
                 <h3 class="text-xl font-semibold mb-4">{{ t('footer.quickLinks') }}</h3>
                 <ul class="space-y-2">
                     <li>
-                        <NuxtLink to="/contatti" class="hover:underline">{{ t('footer.contattaci') }}</NuxtLink>
+                        <NuxtLink to="/contattaci" class="hover:underline">{{ t('footer.contattaci') }}</NuxtLink>
                     </li>
                 </ul>
             </div>
@@ -31,7 +31,7 @@
                     </li>
                     <li class="flex items-center gap-2">
                         <UIcon name="i-heroicons-document-text" class="w-5 h-5 text-primary" />
-                        <NuxtLink to="/privacy" class="hover:underline">{{ t('footer.privacy') }}</NuxtLink>
+                        <NuxtLink to="/" class="hover:underline">{{ t('footer.privacy') }}</NuxtLink>
                     </li>
                 </ul>
             </div>
