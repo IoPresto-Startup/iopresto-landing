@@ -1,5 +1,4 @@
 import tailwindcss from "@tailwindcss/vite"
-import defineI18nConfig from "@nuxtjs/i18n"
 
 export default defineNuxtConfig({
 	compatibilityDate: "2025-07-15",
