@@ -6,7 +6,7 @@
 			</template>
 			<template #default>
 				<p>
-					{{ $t("who.small-description") }}
+					{{ $t("about-us.small-description") }}
 				</p>
 			</template>
 			<template #footer>
@@ -15,7 +15,7 @@
 		</UCard>
 		<NuxtImg src="/img/who-img.jpg" class="basis-1/2 rounded-lg max-h-96" />
 	</div>
-	<WhoDialogDescription v-model:openDialog="openDialog" />
+	<AboutUsDialogDescription v-model:openDialog="openDialog" />
 </template>
 
 <script setup lang="ts">
