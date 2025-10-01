@@ -1,7 +1,7 @@
 <template>
-	<UHeader>
+	<UHeader class="h-20">
 		<template #title>
-			<NuxtImg src="/img/iopresto_logo_2.png" class="w-20 h-10" />
+			<NuxtImg src="/img/iopresto_logo_2.png" class="h-14" />
 		</template>
 
 		<UNavigationMenu :items="items" />
