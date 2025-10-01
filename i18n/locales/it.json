@@ -1,6 +1,8 @@
 {
 	"about-us": {
-		"small-description": "Siamo una startup innovativa che offre una piattaforma digitale che consente ai residenti di Italia, in una prima tappa a Firenze di incontrarsi e scambiare oggetti usati di loro proprietà. Gli oggetti appartengono a diverse categorie, quali bricolage, attrezzature sportive, utensili da cucina, articoli per il giardinaggio e materiali didattici. Attraverso questa piattaforma, gli utenti possono registrarsi facilmente, pubblicare gli oggetti che non utilizzano più e cercare quelli di cui necessitano. La comunicazione e la logistica relative al ritiro e alla consegna degli articoli saranno gestite direttamente tra gli utenti, favorendo un’interazione diretta e creando una community."
+		"title": "Chi siamo",
+		"small-description": "Siamo una startup innovativa che offre una piattaforma digitale che consente ai residenti di Italia, in una prima tappa a Firenze di incontrarsi e scambiare oggetti usati di loro proprietà. Gli oggetti appartengono a diverse categorie, quali bricolage, attrezzature sportive, utensili da cucina, articoli per il giardinaggio e materiali didattici. Attraverso questa piattaforma, gli utenti possono registrarsi facilmente, pubblicare gli oggetti che non utilizzano più e cercare quelli di cui necessitano. La comunicazione e la logistica relative al ritiro e alla consegna degli articoli saranno gestite direttamente tra gli utenti, favorendo un’interazione diretta e creando una community.",
+		"cta": "Scopri di più"
 	},
 	"footer": {
 		"value": "Dai valore agli oggetti usati: prendili in prestito, scambiali e condividili gratuitamente.",
@@ -16,5 +18,17 @@
 		"phone": "+39 324 5499 866",
 		"privacy": "Politica sulla riservatezza",
 		"copyright": "Copyright © 2025 iopresto.com | Create as part of project WAcademy.io"
-	}
+	},
+	"heroBanner": {
+		"startAdventure": "INIZIA LA TUA AVVENTURA",
+		"title": "Esplora la nostra piattaforma",
+		"description": "Prendi in prestito, scambia e condividi oggetti usati, gratis e con semplicità",
+		"cta": "Contattaci"
+	},
+	"heroSection": {
+		"followUs": "Seguici",
+		"title": "iopresto",
+		"description": "Prendi in prestito, scambia e condividi oggetti usati, gratis e con semplicità",
+		"cta": "Inizia"
+	},
 }
