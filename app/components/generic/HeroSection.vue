@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex flex-col items-center justify-center min-h-[70vh] w-full overflow-hidden rounded-2xl">
+  <section class="relative flex flex-col items-center justify-center min-h-[70vh] w-full overflow-hidden rounded-xl">
     <NuxtImg src="/img/hero/hero-sfondo.jpg" alt="Sfondo hero" class="absolute inset-0 w-full h-full object-cover -z-10"
       draggable="false" />
     <div class="absolute inset-0 bg-black/50 -z-10"></div>
