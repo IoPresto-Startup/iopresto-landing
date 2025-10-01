@@ -1,5 +1,5 @@
 <template>
-    <footer class="p-4 md:p-0 min-h-[400px] flex flex-col justify-between">
+    <footer class="p-4 md:p-0 min-h-[400px] flex flex-col justify-between bg-default/75 backdrop-blur">
         <div class="container mx-auto py-12 flex flex-col md:flex-row gap-6 justify-center items-start">
             <div class="md:w-1/3">
                 <h2 class="text-2xl font-bold mb-4">iopresto</h2>
