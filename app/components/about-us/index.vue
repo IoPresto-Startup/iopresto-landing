@@ -2,7 +2,7 @@
 	<UCard class="p-4 sm:p-6">
 		<div class="flex flex-col md:flex-row items-center gap-6 md:gap-10">
 			<!-- Image section (sopra su mobile, sinistra su desktop) -->
-			<NuxtImg src="/img/who-img.jpg"
+			<NuxtImg src="/img/who-img.jpg" alt="Chi siamo"
 				class="w-full md:w-1/2 rounded-lg max-h-64 md:max-h-96 object-cover mb-4 md:mb-0" />
 
 			<!-- Text section -->
