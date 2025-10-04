@@ -6,8 +6,8 @@ import ScrollToTop from '~/components/generic/ScrollToTop.vue';
 <template>
     <LayoutHeader />
     <UMain class="relative min-h-screen overflow-x-hidden">
-        <div class="fixed top-0 left-0 w-full h-screen -z-10 bg-cover bg-center bg-no-repeat"
-            style="background-image: url('/img/bg/pavoni_bg.jpg');"></div>
+        <NuxtImg src="/img/bg/pavoni_bg.jpg" alt=""
+            class="fixed top-0 left-0 w-full h-screen -z-10 object-cover object-center" />
 
         <UContainer>
             <slot />
