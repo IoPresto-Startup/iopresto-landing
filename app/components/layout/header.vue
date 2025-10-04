@@ -4,10 +4,26 @@
 			<NuxtImg src="/img/iopresto_logo_2.png" class="h-14" />
 		</template>
 
-		<UNavigationMenu :items="items" color="neutral" variant="link" :highlight="true" />
+		<UNavigationMenu
+			:items="items"
+			color="neutral"
+			variant="link"
+			:highlight="true"
+		/>
 
 		<template #right>
-			<UColorModeButton />
+			<UColorModeButton color="neutral" />
+		</template>
+
+		<!-- Responsive menu -->
+		<template #body>
+			<UNavigationMenu
+				:items="items"
+				orientation="vertical"
+				color="neutral"
+				variant="link"
+				:highlight="true"
+			/>
 		</template>
 	</UHeader>
 </template>
