@@ -20,7 +20,7 @@
       </div>
 
       <UFormField :label="t('contactForm.message', 'Messaggio')" name="message">
-        <UTextarea v-model="state.message" rows="6" placeholder="Scrivi il tuo messaggio..." aria-label="Messaggio"
+        <UTextarea v-model="state.message" :rows="6" placeholder="Scrivi il tuo messaggio..." aria-label="Messaggio"
           class="w-full" />
       </UFormField>
 
