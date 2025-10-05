@@ -25,10 +25,15 @@ export default defineNuxtConfig({
 				"heroicons:arrow-up",
 				"heroicons:globe-alt",
 				"heroicons:users",
-				"heroicons:chart-bar"
+				"heroicons:chart-bar",
+				// Icone Lucide per UColorModeButton
+				"lucide:sun",
+				"lucide:moon",
+				// Icone Simple Icons per social media
+				"simple-icons:instagram"
 			]
 		},
-		collections: ["heroicons"]
+		collections: ["heroicons", "lucide", "simple-icons"]
 	},
 	i18n: {
 		defaultLocale: "it",
