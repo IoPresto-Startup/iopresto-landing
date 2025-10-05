@@ -1,5 +1,5 @@
 <template>
-  <BaseCard class="p-8 rounded-xl shadow-lg" role="region" aria-label="Contatto iopresto">
+  <BaseCard role="region" aria-label="Contatto iopresto">
     <header class="mb-14">
       <h3 class="text-2xl font-bold ">{{ t('contactForm.title', 'Contattaci') }}</h3>
       <p class="text-sm ">

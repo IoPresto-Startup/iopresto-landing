@@ -5,7 +5,7 @@ import ScrollToTop from '~/components/generic/ScrollToTop.vue';
 
 <template>
     <LayoutHeader />
-    <UMain class="relative min-h-screen overflow-x-hidden">
+    <UMain class="relative p-0 py-2 min-h-screen overflow-x-hidden">
         <div
             class="fixed inset-0 -z-10 bg-gradient-to-br from-teal-100/60 via-blue-100/60 to-green-100/60 dark:from-teal-900/30 dark:via-blue-900/30 dark:to-green-900/30 backdrop-blur-xl border border-teal-200/20 dark:border-teal-700/20">
             <!-- Cerchi più delicati e dispersi -->
