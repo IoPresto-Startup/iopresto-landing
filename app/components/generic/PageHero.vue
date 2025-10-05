@@ -1,6 +1,7 @@
 <template>
-  <section class="relative flex flex-col items-center justify-center min-h-[50vh] w-full overflow-hidden rounded-xl">
-    <NuxtImg :src="backgroundImage" :alt="title" class="absolute inset-0 w-full h-full object-cover -z-10"
+  <section
+    class="relative flex flex-col items-center justify-center min-h-[40vh] md:min-h-[50vh] w-full overflow-hidden rounded-xl">
+    <NuxtImg :src="backgroundImage" :alt="title" class="absolute inset-0 w-full h-full object-cover object-center -z-10"
       draggable="false" />
     <div class="absolute inset-0 bg-black/20 -z-10"></div>
     <UContainer>
