@@ -11,7 +11,13 @@ export default defineAppConfig({
 			}
 		},
 		main: {
-			base: "min-h-[calc(100vh-var(--ui-header-height))]"
+			base: "p-8"
+		},
+		navigationMenu: {
+			slots: {
+				link: "text-base md:text-lg font-medium px-4 py-2.5",
+				linkLabel: "text-base md:text-lg"
+			}
 		}
 	}
 })

@@ -14,11 +14,6 @@
       <div v-for="sdg in sdgs" :key="sdg.number"
         class="group relative p-4 md:p-6 bg-gradient-to-br from-teal-50/60 via-blue-50/40 to-green-50/40 dark:from-teal-900/30 dark:via-blue-900/30 dark:to-green-900/30 backdrop-blur-md rounded-xl border-2 border-transparent hover:border-teal-400/60 dark:hover:border-teal-500/60 shadow-md hover:shadow-2xl transition-all duration-500 ease-out hover:-translate-y-2 overflow-hidden">
 
-        <!-- Gradient background on hover -->
-        <div
-          class="absolute inset-0 bg-gradient-to-br from-teal-100/0 to-blue-100/0 group-hover:from-teal-100/40 group-hover:to-blue-100/40 dark:from-cyan-900/0 dark:to-blue-900/0 dark:group-hover:from-cyan-900/20 dark:group-hover:to-blue-900/20 transition-all duration-500 rounded-xl">
-        </div>
-
         <div class="flex flex-col gap-6 justify-center items-center text-center">
           <div
             class="w-12 h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 rounded-xl bg-gradient-to-br from-cyan-400 via-cyan-500 to-blue-600 flex items-center justify-center text-white font-bold text-lg md:text-xl shadow-lg group-hover:shadow-2xl group-hover:scale-110 transition-all duration-500">

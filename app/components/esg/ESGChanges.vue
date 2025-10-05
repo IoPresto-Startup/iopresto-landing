@@ -5,71 +5,39 @@
       {{ t('esg.changes.title', 'Cambiamenti che vorremmo apportare con la community IOPRESTO') }}
     </h2>
 
-    <UAccordion :items="accordionItems" variant="soft" size="lg" class="space-y-4 md:space-y-5 mb-10 md:mb-12">
+    <UAccordion v-model="activeAccordion" :items="accordionItems" variant="soft" size="lg"
+      class="space-y-4 md:space-y-5 mb-10 md:mb-12">
       <template #environmental>
-        <div
-          class="p-4 md:p-6 bg-gradient-to-br from-teal-50/50 to-green-50/50 dark:from-teal-900/20 dark:to-green-900/20 rounded-xl">
-          <ul class="space-y-3 md:space-y-4">
-            <li class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
-              <span
-                class="w-2.5 h-2.5 md:w-3 md:h-3 bg-green-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
-              <span class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                {{ t('esg.changes.environmental.item1', 'Diminuzione dei rifiuti') }}
-              </span>
-            </li>
-            <li class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
-              <span
-                class="w-2.5 h-2.5 md:w-3 md:h-3 bg-green-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
-              <span class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                {{ t('esg.changes.environmental.item2', 'Riduzione dell\'impronta ecologica') }}
-              </span>
-            </li>
-          </ul>
-        </div>
+        <ul class="space-y-3 md:space-y-4 py-4">
+          <li v-for="(item, index) in environmentalItems" :key="index"
+            class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
+            <span
+              class="w-2.5 h-2.5 md:w-3 md:h-3 bg-green-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
+            <span class="text-gray-700 dark:text-gray-200 leading-relaxed">{{ item }}</span>
+          </li>
+        </ul>
       </template>
 
       <template #social>
-        <div
-          class="p-4 md:p-6 bg-gradient-to-br from-blue-50/50 to-teal-50/50 dark:from-blue-900/20 dark:to-teal-900/20 rounded-xl">
-          <ul class="space-y-3 md:space-y-4">
-            <li class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
-              <span
-                class="w-2.5 h-2.5 md:w-3 md:h-3 bg-blue-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
-              <span class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                {{ t('esg.changes.social.item1', 'Cultura del riuso') }}
-              </span>
-            </li>
-            <li class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
-              <span
-                class="w-2.5 h-2.5 md:w-3 md:h-3 bg-blue-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
-              <span class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                {{ t('esg.changes.social.item2', 'Integrazione sociale') }}
-              </span>
-            </li>
-          </ul>
-        </div>
+        <ul class="space-y-3 md:space-y-4 py-4">
+          <li v-for="(item, index) in socialItems" :key="index"
+            class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
+            <span
+              class="w-2.5 h-2.5 md:w-3 md:h-3 bg-blue-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
+            <span class="text-gray-700 dark:text-gray-200 leading-relaxed">{{ item }}</span>
+          </li>
+        </ul>
       </template>
 
       <template #economic>
-        <div
-          class="p-4 md:p-6 bg-gradient-to-br from-yellow-50/50 to-teal-50/50 dark:from-yellow-900/20 dark:to-teal-900/20 rounded-xl">
-          <ul class="space-y-3 md:space-y-4">
-            <li class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
-              <span
-                class="w-2.5 h-2.5 md:w-3 md:h-3 bg-orange-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
-              <span class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                {{ t('esg.changes.economic.item1', 'Nuovi modelli di consumo') }}
-              </span>
-            </li>
-            <li class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
-              <span
-                class="w-2.5 h-2.5 md:w-3 md:h-3 bg-orange-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
-              <span class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                {{ t('esg.changes.economic.item2', 'Posizionamento competitivo') }}
-              </span>
-            </li>
-          </ul>
-        </div>
+        <ul class="space-y-3 md:space-y-4 py-4">
+          <li v-for="(item, index) in economicItems" :key="index"
+            class="flex items-start gap-3 md:gap-4 text-base md:text-lg group">
+            <span
+              class="w-2.5 h-2.5 md:w-3 md:h-3 bg-orange-500 rounded-full mt-1.5 flex-shrink-0 group-hover:scale-125 transition-transform duration-300"></span>
+            <span class="text-gray-700 dark:text-gray-200 leading-relaxed">{{ item }}</span>
+          </li>
+        </ul>
       </template>
     </UAccordion>
 
@@ -95,6 +63,18 @@ import { useI18n } from 'vue-i18n'
 import BaseCard from '~/components/generic/BaseCard.vue'
 const { t } = useI18n()
 
+const activeAccordion = ref('0')
+
+// Rotazione automatica dell'accordion ogni 5 secondi
+onMounted(() => {
+  const interval = setInterval(() => {
+    const currentIndex = Number(activeAccordion.value)
+    activeAccordion.value = String((currentIndex + 1) % 3)
+  }, 5000)
+
+  onUnmounted(() => clearInterval(interval))
+})
+
 const accordionItems = computed(() => [
   {
     label: t('esg.changes.environmental.title', 'Cambiamenti ambientali'),
@@ -114,6 +94,21 @@ const accordionItems = computed(() => [
     slot: 'economic',
     defaultOpen: false
   }
+])
+
+const environmentalItems = computed(() => [
+  t('esg.changes.environmental.item1', 'Diminuzione dei rifiuti'),
+  t('esg.changes.environmental.item2', 'Riduzione dell\'impronta ecologica')
+])
+
+const socialItems = computed(() => [
+  t('esg.changes.social.item1', 'Cultura del riuso'),
+  t('esg.changes.social.item2', 'Integrazione sociale')
+])
+
+const economicItems = computed(() => [
+  t('esg.changes.economic.item1', 'Nuovi modelli di consumo'),
+  t('esg.changes.economic.item2', 'Posizionamento competitivo')
 ])
 </script>
 
