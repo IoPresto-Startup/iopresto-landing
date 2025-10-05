@@ -2,7 +2,6 @@
   <section class="relative flex flex-col items-center justify-center min-h-[70vh] w-full overflow-hidden rounded-xl">
     <NuxtImg src="/img/hero/hero-sfondo.jpg" alt="Sfondo hero" class="absolute inset-0 w-full h-full object-cover -z-10"
       draggable="false" />
-    <div class="absolute inset-0 bg-gradient-to-br from-teal-900/40 via-blue-900/40 to-green-900/40 -z-10"></div>
     <div class="absolute inset-0 bg-black/20 -z-10"></div>
     <div
       class="absolute top-0 left-1/4 w-64 h-64 bg-blue-400/30 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2">

@@ -2,7 +2,7 @@
   <section class="relative flex flex-col items-center justify-center min-h-[50vh] w-full overflow-hidden rounded-xl">
     <NuxtImg :src="backgroundImage" :alt="title" class="absolute inset-0 w-full h-full object-cover -z-10"
       draggable="false" />
-    <div class="absolute inset-0 bg-black/50 -z-10"></div>
+    <div class="absolute inset-0 bg-black/20 -z-10"></div>
     <UContainer>
       <div class="relative z-10 flex flex-col items-center justify-center text-center px-4 py-16">
         <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-4">
