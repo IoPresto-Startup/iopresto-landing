@@ -1,7 +1,12 @@
+<style scoped>
+.u-accordion-header {
+  cursor: pointer;
+}
+</style>
 <template>
   <section class="py-12">
     <UContainer>
-      <UCard class="max-w-4xl mx-auto p-8 bg-default/75 backdrop-blur rounded-2xl shadow-lg">
+      <UCard class="max-w-full mx-auto p-4 md:p-8 bg-default/75 backdrop-blur rounded-2xl shadow-lg">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">
           {{ t('esg.changes.title', 'Cambiamenti che vorremmo apportare con la community IOPRESTO') }}
         </h2>
@@ -9,11 +14,11 @@
         <UAccordion :items="accordionItems" variant="soft" size="lg" class="space-y-4 mb-8">
           <template #environmental>
             <ul class="space-y-2 text-lg">
-              <li class="flex items-center gap-3">
+              <li class="flex items-center gap-2 md:gap-3 text-base md:text-lg">
                 <span class="w-2 h-2 bg-green-500 rounded-full"></span>
                 {{ t('esg.changes.environmental.item1', 'Diminuzione dei rifiuti') }}
               </li>
-              <li class="flex items-center gap-3">
+              <li class="flex items-center gap-2 md:gap-3 text-base md:text-lg">
                 <span class="w-2 h-2 bg-green-500 rounded-full"></span>
                 {{ t('esg.changes.environmental.item2', 'Riduzione dell\'impronta ecologica') }}
               </li>
@@ -22,11 +27,11 @@
 
           <template #social>
             <ul class="space-y-2 text-lg">
-              <li class="flex items-center gap-3">
+              <li class="flex items-center gap-2 md:gap-3 text-base md:text-lg">
                 <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
                 {{ t('esg.changes.social.item1', 'Cultura del riuso') }}
               </li>
-              <li class="flex items-center gap-3">
+              <li class="flex items-center gap-2 md:gap-3 text-base md:text-lg">
                 <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
                 {{ t('esg.changes.social.item2', 'Integrazione sociale') }}
               </li>
@@ -71,12 +76,14 @@ const accordionItems = computed(() => [
   {
     label: t('esg.changes.social.title', 'Cambiamenti sociali'),
     icon: 'i-heroicons-users',
-    slot: 'social'
+    slot: 'social',
+    class: 'u-accordion-header'
   },
   {
     label: t('esg.changes.economic.title', 'Cambiamenti economici'),
     icon: 'i-heroicons-chart-bar',
-    slot: 'economic'
+    slot: 'economic',
+    class: 'u-accordion-header'
   }
 ])
 </script>
