@@ -1,7 +1,7 @@
 <template>
   <section class="py-12">
     <UContainer>
-      <UCard class="max-w-6xl mx-auto p-8 bg-default/75 backdrop-blur rounded-2xl shadow-lg">
+      <UCard class="max-w-full lg:max-w-6xl mx-auto p-4 md:p-8 bg-default/75 backdrop-blur rounded-2xl shadow-lg">
         <div class="text-center mb-12">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">
             {{ t('esg.sdgs.title', 'Obiettivi di sviluppo') }}
@@ -13,20 +13,19 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
           <div v-for="sdg in sdgs" :key="sdg.number"
-            class="p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur rounded-xl border border-cyan-200/30 dark:border-cyan-700/30 hover:shadow-lg hover:border-cyan-300/50 transition-all duration-300">
+            class="p-4 md:p-6 bg-white/50 dark:bg-gray-800/50 backdrop-blur rounded-xl border border-cyan-200/30 dark:border-cyan-700/30 hover:shadow-lg hover:border-cyan-300/50 transition-all duration-300">
             <div class="flex items-start gap-4">
               <div class="flex-shrink-0">
                 <div
-                  class="w-16 h-16 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg">
+                  class="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-white font-bold text-base md:text-lg shadow-lg">
                   SDG {{ sdg.number }}
                 </div>
               </div>
-
               <div class="flex-1">
-                <h3 class="text-xl font-semibold mb-3">
+                <h3 class="text-base md:text-xl font-semibold mb-2 md:mb-3">
                   {{ sdg.title }}
                 </h3>
-                <p class="text-sm leading-relaxed">
+                <p class="text-xs md:text-sm leading-relaxed">
                   {{ sdg.description }}
                 </p>
               </div>
