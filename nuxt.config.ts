@@ -5,7 +5,11 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ["~/assets/css/main.css"],
 	app: {
-		baseURL: process.env?.NUXT_APP_BASE_URL || "/"
+		baseURL: process.env?.NUXT_APP_BASE_URL || "/",
+		pageTransition: {
+			name: "page",
+			mode: "out-in"
+		}
 	},
 	vite: {
 		plugins: [tailwindcss()]
