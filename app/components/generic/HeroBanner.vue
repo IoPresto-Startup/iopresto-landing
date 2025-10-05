@@ -3,8 +3,7 @@
     role="region" aria-label="Hero Iopresto">
     <NuxtImg src="/img/hero/banner.jpg" alt="" class="absolute inset-0 w-full h-full object-cover pointer-events-none"
       draggable="false" />
-    <div class="absolute inset-0 bg-gradient-to-br from-teal-900/40 via-blue-900/40 to-green-900/40"></div>
-    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="absolute inset-0 bg-black/30"></div>
     <div
       class="absolute top-0 left-1/4 w-64 h-64 bg-blue-400/30 rounded-full blur-2xl -translate-x-1/2 -translate-y-1/2">
     </div>
