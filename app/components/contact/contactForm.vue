@@ -1,5 +1,7 @@
 <template>
-  <UCard class="p-8 bg-default rounded-xl shadow-lg" role="region" aria-label="Contatto iopresto">
+  <UCard
+    class="p-8 bg-gradient-to-br from-teal-100/80 via-blue-100/80 to-green-100/80 dark:from-teal-900/40 dark:via-blue-900/40 dark:to-green-900/40 backdrop-blur-xl rounded-xl border border-teal-200/30 dark:border-teal-700/30 shadow-lg"
+    role="region" aria-label="Contatto iopresto">
     <header class="mb-14">
       <h3 class="text-2xl font-bold ">{{ t('contactForm.title', 'Contattaci') }}</h3>
       <p class="text-sm ">
@@ -27,7 +29,7 @@
       <div class="pt-2 flex justify-center">
         <!-- Bottone con lo stile richiesto -->
         <UButton type="submit" :disabled="sending" size="xl" color="primary" variant="soft"
-          class="border border-cyan-400 px-8 py-3 text-lg font-semibold backdrop-blur bg-white/10 hover:bg-cyan-500/30 transition-all"
+          class="border border-teal-400 px-8 py-3 text-lg font-semibold backdrop-blur bg-white/10 text-teal-900 dark:text-white hover:bg-teal-500/30 transition-all"
           aria-label="Invia messaggio">
           <span v-if="!sending">{{ t('contactForm.submit', 'Invia') }}</span>
           <span v-else>{{ t('contactForm.sending', 'Invio...') }}</span>
