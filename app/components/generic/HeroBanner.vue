@@ -1,5 +1,6 @@
 <template>
-  <section class="relative flex flex-col items-center justify-center min-h-[40vh] w-full overflow-hidden rounded-xl"
+  <GradientBackground
+    class="relative flex flex-col items-center justify-center min-h-[40vh] w-full overflow-hidden rounded-xl"
     role="region" aria-label="Hero Iopresto">
     <NuxtImg src="/img/hero/banner.jpg" alt="" class="absolute inset-0 w-full h-full object-cover pointer-events-none"
       draggable="false" />
@@ -27,11 +28,12 @@
         {{ t('heroBanner.cta') }}
       </UButton>
     </div>
-  </section>
+  </GradientBackground>
 </template>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import GradientBackground from '~/components/generic/GradientBackground.vue'
 const { t } = useI18n()
 </script>
 
