@@ -1,8 +1,7 @@
 <template>
   <section class="py-12 md:py-16 lg:py-20">
     <UContainer>
-      <UCard
-        class="max-w-full lg:max-w-6xl mx-auto p-6 md:p-10 lg:p-12 bg-gradient-to-br from-teal-100/80 via-blue-100/80 to-green-100/80 dark:from-teal-900/40 dark:via-blue-900/40 dark:to-green-900/40 backdrop-blur-xl rounded-3xl shadow-2xl border border-teal-200/30 dark:border-teal-700/30">
+      <BaseCard class="max-w-full lg:max-w-6xl mx-auto p-6 md:p-10 lg:p-12">
         <h2
           class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-10 md:mb-14 bg-gradient-to-r from-cyan-600 to-blue-600 dark:from-cyan-400 dark:to-blue-400 bg-clip-text text-transparent px-4">
           {{ t('esg.changes.title', 'Cambiamenti che vorremmo apportare con la community IOPRESTO') }}
@@ -90,13 +89,14 @@
             {{ t('esg.changes.conclusion') }}
           </p>
         </div>
-      </UCard>
+      </BaseCard>
     </UContainer>
   </section>
 </template>
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import BaseCard from '~/components/generic/BaseCard.vue'
 const { t } = useI18n()
 
 const accordionItems = computed(() => [
