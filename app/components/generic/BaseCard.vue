@@ -1,24 +1,13 @@
 <template>
-  <UCard :class="cardClass">
-    <slot />
-  </UCard>
+	<UCard variant="soft">
+		<div class="flex flex-col gap-5">
+			<h3 class="text-4xl text-primary-500 font-bold">{{ title }}</h3>
+			<slot name="content" />
+			<slot name="actions" />
+		</div>
+	</UCard>
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  class: {
-    type: String,
-    default: ''
-  }
-})
-
-const cardClass = [
-  'bg-gradient-to-br from-teal-100/80 via-blue-100/80 to-green-100/80',
-  'dark:from-teal-900/40 dark:via-blue-900/40 dark:to-green-900/40',
-  'backdrop-blur-xl rounded-2xl shadow-xl border border-teal-200/30 dark:border-teal-700/30',
-  'w-full',
-  props.class
-].join(' ')
+const { title } = defineProps<{ title: string }>()
 </script>
-
-<style scoped></style>
