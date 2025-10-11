@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "iopresto-landing"
-  }
+  },
+  "targets": {
+    "iopresto-landing": {
+      "hosting": {
+        "default": [
+          "iopresto-landing"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

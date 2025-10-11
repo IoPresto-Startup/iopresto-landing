@@ -1,8 +1,8 @@
 <template>
 	<GenericBaseCard :title="$t('about-us.title')">
 		<template #content>
-			<div class="flex gap-3">
-				<p class="basis-[50%]">
+			<div class="flex gap-3 flex-col lg:flex-row">
+				<p class="basis-[50%] line-clamp-5">
 					{{ $t("about-us.small-description") }}
 				</p>
 				<div class="basis-[50%] flex items-center justify-center">
