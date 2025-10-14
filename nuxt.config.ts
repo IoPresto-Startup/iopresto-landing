@@ -20,22 +20,7 @@ export default defineNuxtConfig({
 		serverBundle: "local",
 		clientBundle: {
 			scan: true,
-			sizeLimitKb: 256,
-			icons: [
-				"heroicons:chevron-right",
-				"heroicons:phone",
-				"heroicons:envelope",
-				"heroicons:document-text",
-				"heroicons:arrow-up",
-				"heroicons:globe-alt",
-				"heroicons:users",
-				"heroicons:chart-bar",
-				// Icone Lucide per UColorModeButton
-				"lucide:sun",
-				"lucide:moon",
-				// Icone Simple Icons per social media
-				"simple-icons:instagram"
-			]
+			sizeLimitKb: 256
 		},
 		collections: ["heroicons", "lucide", "simple-icons"]
 	},
