@@ -4,15 +4,15 @@
 			<NuxtImg src="/img/iopresto_logo_2.png" alt="IoPresto Logo" class="h-12" />
 		</template>
 
-		<UNavigationMenu :items="items" color="neutral" variant="link" :highlight="true" />
+		<UNavigationMenu :items="items" :highlight="true" />
 
 		<template #right>
-			<UColorModeButton color="neutral" />
+			<UColorModeButton color="primary" />
 		</template>
 
 		<!-- Responsive menu -->
 		<template #body>
-			<UNavigationMenu :items="items" orientation="vertical" color="neutral" variant="link" :highlight="true" />
+			<UNavigationMenu :items="items" orientation="vertical" :highlight="true" />
 		</template>
 	</UHeader>
 </template>

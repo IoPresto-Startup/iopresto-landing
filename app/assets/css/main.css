@@ -2,16 +2,46 @@
 @import "@nuxt/ui";
 
 :root {
-  --ui-header-height: --spacing(24);
+	--ui-header-height: --spacing(24);
+	--ui-primary: var(--ui-color-primary-500);
+	--ui-secondary: var(--ui-color-secondary-500);
+}
+
+.dark {
+	--ui-primary: var(--ui-color-primary-700);
+	--ui-secondary: var(--ui-color-secondary-700);
 }
 
 /* Transizioni pagina - fade in/out semplice */
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.15s ease;
+	transition: opacity 0.15s ease;
 }
 
 .page-enter-from,
 .page-leave-to {
-  opacity: 0;
+	opacity: 0;
+}
+
+@theme static {
+	/* primary */
+	--color-primary-100: #0a1d25;
+	--color-primary-200: #153a49;
+	--color-primary-300: #1f576e;
+	--color-primary-400: #297592;
+	--color-primary-500: #3493b8;
+	--color-primary-600: #53accf;
+	--color-primary-700: #7ec0db;
+	--color-primary-800: #a9d5e7;
+	--color-primary-900: #d4eaf3;
+	/* secondary */
+	--color-secondary-100: #2e0f05;
+	--color-secondary-200: #5c1f0a;
+	--color-secondary-300: #8a2e0f;
+	--color-secondary-400: #b83d14;
+	--color-secondary-500: #e44e1a;
+	--color-secondary-600: #eb7047;
+	--color-secondary-700: #f09475;
+	--color-secondary-800: #f5b8a3;
+	--color-secondary-900: #fadbd1;
 }
