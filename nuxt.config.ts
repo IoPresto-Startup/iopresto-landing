@@ -14,7 +14,13 @@ export default defineNuxtConfig({
 	vite: {
 		plugins: [tailwindcss()]
 	},
-	modules: ["@nuxt/ui", "@nuxt/icon", "@nuxt/image", "@nuxtjs/i18n"],
+	modules: [
+		"@nuxt/ui",
+		"@nuxt/icon",
+		"@nuxt/image",
+		"@nuxtjs/i18n",
+		"nuxt-viewport"
+	],
 	icon: {
 		mode: "css",
 		serverBundle: "local",
@@ -36,30 +42,15 @@ export default defineNuxtConfig({
 	},
 	imports: {
 		autoImport: true
+	},
+	viewport: {
+		breakpoints: {
+			xs: 480,
+			sm: 640,
+			md: 768,
+			lg: 1024,
+			xl: 1280,
+			"2xl": 1536
+		}
 	}
 })
-
-// import tailwindcss from "@tailwindcss/vite"
-
-// export default defineNuxtConfig({
-//     compatibilityDate: "2025-07-15",
-//     devtools: { enabled: true },
-//     css: ["~/assets/css/main.css"],
-//     vite: {
-//         plugins: [tailwindcss()]
-//     },
-//     modules: ["@nuxt/ui", "@nuxt/icon", "@nuxt/image", "@nuxtjs/i18n"],
-//     i18n: {
-//         defaultLocale: "it",
-//         locales: [
-//             {
-//                 code: "it",
-//                 name: "Italiano",
-//                 file: "it.json"
-//             }
-//         ]
-//     },
-//     imports: {
-//         autoImport: true
-//     }
-// })

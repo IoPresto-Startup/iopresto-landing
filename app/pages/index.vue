@@ -1,13 +1,8 @@
-<script setup lang="ts">
-import HeroBanner from '~/components/generic/HeroBanner.vue';
-
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-	<div class="flex flex-col gap-32 py-12">
+	<div class="flex flex-col gap-20">
 		<GenericHeroSection />
 		<AboutUs />
-		<HeroBanner />
 	</div>
 </template>
