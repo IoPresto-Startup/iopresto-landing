@@ -11,7 +11,7 @@ export default defineAppConfig({
 			}
 		},
 		main: {
-			base: "py-10 sm:px-5 md:px-7 lg:px-10 2x:px-15"
+			base: "py-10 sm:px-5 md:px-7 lg:px-10 2x:px-15 min-h-fit"
 		},
 		navigationMenu: {
 			slots: {
