@@ -6,7 +6,7 @@
 			class="container mx-auto py-12 flex flex-col md:flex-row gap-6 justify-center items-start"
 		>
 			<div class="md:w-1/3">
-				<h2 class="text-2xl font-bold mb-4">iopresto</h2>
+				<h2 class="text-2xl font-bold mb-4">{{ $t("heroSection.title") }}</h2>
 				<p class="mb-2 text-sm md:w-3/4">{{ $t("footer.value") }}</p>
 				<p class="mb-6 text-sm md:w-3/4">{{ $t("footer.innovative") }}</p>
 			</div>
@@ -39,21 +39,15 @@
 					</li>
 					<li class="flex items-center gap-2">
 						<UIcon
-							name="i-heroicons-document-text"
-							class="w-5 h-5 text-primary"
-						/>
-						<NuxtLink to="/" class="hover:underline">{{
-							$t("footer.privacy")
-						}}</NuxtLink>
-					</li>
-					<li class="flex items-center gap-2">
-						<UIcon
 							name="i-simple-icons-instagram"
 							class="w-5 h-5 text-primary"
 						/>
-						<NuxtLink to="/" class="hover:underline">{{
-							$t("about-us.instagram")
-						}}</NuxtLink>
+						<NuxtLink
+							to="https://www.instagram.com/ioprestoitalia/"
+							target="_blank"
+							class="hover:underline"
+							>{{ $t("about-us.instagram") }}</NuxtLink
+						>
 					</li>
 				</ul>
 			</div>

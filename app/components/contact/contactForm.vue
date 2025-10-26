@@ -2,34 +2,54 @@
 	<BaseCard :title="t('contactForm.title', 'Contattaci')">
 		<template #content>
 			<p class="text-sm">
-				{{
-					t(
-						"contactForm.subtitle",
-						"Hai bisogno di aiuto? Scrivici e ti risponderemo a breve."
-					)
-				}}
+				{{ t("contactForm.subtitle") }}
 			</p>
 
 			<UForm :schema="schema" :state="state" @submit="onSubmit">
-				<div class="grid grid-cols-2 gap-6 w-full">
+				<div class="grid md:grid-cols-2 gap-5">
 					<UFormField :label="t('contactForm.name', 'Nome')" name="name">
-						<UInput v-model="state.name" placeholder="Mario Rossi" aria-label="Nome" class="w-full" />
+						<UInput
+							v-model="state.name"
+							placeholder="Mario Rossi"
+							aria-label="Nome"
+							class="w-full"
+						/>
 					</UFormField>
 
-					<UFormField :label="t('contactForm.email', 'Email')" name="email">
-						<UInput v-model="state.email" type="email" placeholder="mario@esempio.com" aria-label="Email"
-							class="w-full" />
+					<UFormField :label="t('contactForm.email')" name="email">
+						<UInput
+							v-model="state.email"
+							type="email"
+							placeholder="mario@esempio.com"
+							aria-label="Email"
+							class="w-full"
+						/>
+					</UFormField>
+
+					<UFormField
+						:label="t('contactForm.message')"
+						name="message"
+						class="md:col-span-2"
+					>
+						<UTextarea
+							v-model="state.message"
+							:rows="6"
+							placeholder="Scrivi il tuo messaggio..."
+							aria-label="Messaggio"
+							class="w-full"
+						/>
 					</UFormField>
 				</div>
 
-				<UFormField :label="t('contactForm.message', 'Messaggio')" name="message">
-					<UTextarea v-model="state.message" :rows="6" placeholder="Scrivi il tuo messaggio..." aria-label="Messaggio"
-						class="w-full" />
-				</UFormField>
-
 				<!-- Bottone con lo stile richiesto -->
-				<UButton type="submit" :disabled="sending" size="xl" color="primary" variant="soft" aria-label="Invia messaggio"
-					class="mt-4">
+				<UButton
+					type="submit"
+					:disabled="sending || !state.name || !state.email || !state.message"
+					color="primary"
+					variant="solid"
+					aria-label="Invia messaggio"
+					class="mt-4"
+				>
 					<span v-if="!sending">{{ t("contactForm.submit", "Invia") }}</span>
 					<span v-else>{{ t("contactForm.sending", "Invio...") }}</span>
 				</UButton>
@@ -48,21 +68,12 @@ import { ref, reactive } from "vue"
 const { t } = useI18n()
 const toast = useToast
 	? useToast()
-	: ({ success: () => { }, error: () => { } } as any)
+	: ({ success: () => {}, error: () => {} } as any)
 
 const schema = v.object({
-	name: v.pipe(
-		v.string(),
-		v.minLength(2, t("contactForm.errors.name", "Nome troppo corto"))
-	),
-	email: v.pipe(
-		v.string(),
-		v.email(t("contactForm.errors.email", "Email non valida"))
-	),
-	message: v.pipe(
-		v.string(),
-		v.minLength(10, t("contactForm.errors.message", "Messaggio troppo corto"))
-	)
+	name: v.pipe(v.string(), v.minLength(2, t("contactForm.errors.name"))),
+	email: v.pipe(v.string(), v.email(t("contactForm.errors.email"))),
+	message: v.pipe(v.string(), v.minLength(10, t("contactForm.errors.message")))
 })
 
 type Schema = v.InferOutput<typeof schema>
@@ -102,7 +113,7 @@ function openMailClient(payload: {
 		} catch (err2) {
 			const fallbackText = `Invia a: ${support}\nOggetto: Messaggio da ${payload.name} - iopresto\n\n${payload.message}`
 			if (navigator.clipboard && navigator.clipboard.writeText) {
-				navigator.clipboard.writeText(fallbackText).catch(() => { })
+				navigator.clipboard.writeText(fallbackText).catch(() => {})
 			}
 			return false
 		}
