@@ -24,6 +24,29 @@ export default defineAppConfig({
 			slots: {
 				root: "shadow-[0_0_30px_rgba(0,0,0,0.2)] dark:shadow-[0_0_30px_rgba(0,0,0,0.6)] rounded-lg"
 			}
+		},
+		modal: {
+			variants: {
+				fullscreen: {
+					false: {
+						content: "max-w-[50rem]"
+					}
+				}
+			}
+		},
+		carousel: {
+			variants: {
+				orientation: {
+					horizontal: {
+						container: "items-stretch"
+					}
+				},
+				active: {
+					true: {
+						dot: "transition-all duration-300 data-[state=active]:w-6 data-[state=active]:bg-primary-500"
+					}
+				}
+			}
 		}
 	}
 })

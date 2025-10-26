@@ -1,9 +1,9 @@
 {
 	"about-us": {
 		"title": "Chi siamo",
-		"small-description": "Siamo una startup innovativa che offre una piattaforma digitale che consente ai residenti in Italia di incontrarsi e scambiare oggetti usati di loro proprietà. Gli oggetti appartengono a diverse categorie, quali bricolage, attrezzature sportive, utensili da cucina, articoli per il giardinaggio e materiali didattici. Attraverso questa piattaforma, gli utenti possono registrarsi facilmente, pubblicare gli oggetti che non utilizzano più e cercare quelli di cui necessitano. La comunicazione e la logistica relative al ritiro e alla consegna degli articoli saranno gestite direttamente tra gli utenti, favorendo un’interazione diretta e creando una community.",
-		"total-description": "Siamo una startup innovativa che offre una piattaforma digitale che consente ai residenti in Italia di incontrarsi e scambiare oggetti usati di loro proprietà. Gli oggetti appartengono a diverse categorie, quali bricolage, attrezzature sportive, utensili da cucina, articoli per il giardinaggio e materiali didattici. Attraverso questa piattaforma, gli utenti possono registrarsi facilmente, pubblicare gli oggetti che non utilizzano più e cercare quelli di cui necessitano. La comunicazione e la logistica relative al ritiro e alla consegna degli articoli saranno gestite direttamente tra gli utenti, favorendo un’interazione diretta e creando una community.{space}I vantaggi di questa soluzione, in termini di sostenibilità, risultano pienamente allineati con i criteri ESG. Offrire la possibilità di accedere a beni senza acquistarli genera un impatto ambientale positivo significativo, riducendo lo sfruttamento eccessivo delle risorse naturali e contribuendo alla diminuzione delle emissioni di carbonio.{space}In tal modo, si promuove l’economia circolare e un approccio più sostenibile ai consumi. La nostra iniziativa mira a ridurre gli acquisti superflui di prodotti a bassa frequenza d’uso, evitando che vengano smaltiti prematuramente. La piattaforma incentiva, inoltre, la collaborazione all’interno della comunità, rafforzando i legami sociali e promuovendo una cultura basata sulla condivisione e il riutilizzo",
-		"cta": "Scopri di più"
+		"real-description": "Siamo una startup innovativa che consente ai residenti in Italia di incontrarsi e scambiare oggetti usati appartenenti a diverse categorie, quali bricolage, attrezzature sportive, utensili da cucina, articoli per il giardinaggio e materiali didattici. L’utente che accede alla nostra piattaforma digitale, dopo essersi registrato, ha la possibilità di pubblicare gli oggetti che non utilizza più e cercare quelli di cui necessita.{space}La comunicazione e la logistica relative al ritiro e alla consegna degli articoli saranno gestite direttamente tra gli utenti, favorendo un’interazione diretta e creando una community. I vantaggi di questa soluzione, in termini di sostenibilità, risultano pienamente allineati con i criteri ESG (Environmental, Social, and Governance). Offrire la possibilità di accedere a beni senza acquistarli genera un impatto ambientale positivo significativo, riducendo lo sfruttamento eccessivo delle risorse naturali e contribuendo alla diminuzione delle emissioni di carbonio.{space}Negli ultimi anni, il tema della sostenibilità e della riduzione degli sprechi ha acquisito un ruolo centrale nelle agende di governi e organizzazioni a livello globale. In Italia, dove il consumo di beni è particolarmente elevato, emergono sfide significative legate all'eccesso di rifiuti e all'utilizzo efficiente delle risorse. Secondo i dati dell'ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale), ogni cittadino italiano produce in media circa 499 kg di rifiuti all'anno, molti dei quali potrebbero essere riutilizzati. In questo contesto, iniziative e piattaforme che promuovono l'economia circolare stanno emergendo come soluzioni innovative per ridurre l'impatto ambientale.{space}Lo scopo della nostra piattaforma è ridurre gli acquisti superflui di prodotti a bassa frequenza d’uso, evitando che vengano smaltiti prematuramente, rafforzare i legami sociali e promuovere una cultura basata sulla condivisione e il riutilizzo. Aspiriamo a diventare un punto di riferimento nel settore delle startup sostenibili a Firenze, con l'obiettivo di estendere il nostro impatto in tutta la Toscana e, successivamente, a livello internazionale.",
+		"cta": "Scopri di più",
+		"instagram": "ioprestoitalia"
 	},
 	"footer": {
 		"value": "Dai valore agli oggetti usati: prendili in prestito, scambiali e condividili gratuitamente.",
@@ -61,34 +61,12 @@
 			"contattaci": "Contattaci"
 		}
 	},
+	"objectives": {
+		"title": "Obbiettivi di sviluppo",
+		"subtitle": "IOPRESTO, con la sua piattaforma di scambio di oggetti usati e la promozione di un'economia circolare, contribuisce a diversi obbiettivi di sviluppo sostenibile (SDGs) delle Nazioni Unite:"
+	},
 	"esg": {
-		"intro": {
-			"title": "ESG",
-			"paragraph1": "L'impresa opera nel settore della sostenibilità e dell'economia circolare, con un focus specifico sulla promozione del riutilizzo e dello scambio di beni usati tra privati. L'obiettivo principale è ridurre l'impatto ambientale legato alla produzione e al consumo di oggetti a basso utilizzo. Negli ultimi anni, il tema della sostenibilità e della riduzione degli sprechi ha acquisito un ruolo centrale nelle agende di governi e organizzazioni a livello globale. In Italia, dove il consumo di beni è particolarmente elevato, emergono sfide significative legate all'eccesso di rifiuti e all'utilizzo efficiente delle risorse.",
-			"paragraph2": "Il modello tradizionale di consumo \"produci-usa-getta\" continua a prevalere, contribuendo a un accumulo significativo di rifiuti domestici. Secondo i dati dell'ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale), ogni cittadino italiano produce in media circa 499 kg di rifiuti all'anno, molti dei quali potrebbero essere riutilizzati. In questo contesto, iniziative e piattaforme che promuovono l'economia circolare stanno emergendo come soluzioni innovative per ridurre l'impatto ambientale."
-		},
-		"changes": {
-			"title": "Cambiamenti che vorremmo apportare con la community IOPRESTO",
-			"environmental": {
-				"title": "Cambiamenti ambientali",
-				"item1": "Diminuzione dei rifiuti",
-				"item2": "Riduzione dell'impronta ecologica"
-			},
-			"social": {
-				"title": "Cambiamenti sociali",
-				"item1": "Cultura del riuso",
-				"item2": "Integrazione sociale"
-			},
-			"economic": {
-				"title": "Cambiamenti economici",
-				"item1": "Nuovi modelli di consumo",
-				"item2": "Posizionamento competitivo"
-			},
-			"conclusion": "Con IOPRESTO, vogliamo costruire un futuro in cui il riutilizzo diventi la norma, non l'eccezione. Un futuro in cui ogni oggetto abbia una seconda vita e in cui le persone possano contribuire attivamente a creare un mondo più sostenibile e responsabile. Ambiamo a diventare un punto di riferimento nel settore delle startup sostenibili a Firenze, con l'obiettivo di estendere il nostro impatto in tutta la Toscana e, successivamente, a livello internazionale."
-		},
 		"sdgs": {
-			"title": "Obiettivi di sviluppo",
-			"subtitle": "IOPRESTO, con la sua piattaforma di scambio di oggetti usati e la promozione di un'economia circolare, può contribuire a diversi obiettivi di sviluppo sostenibile (SDGs) delle Nazioni Unite. Ecco i principali che potrebbe coprire:",
 			"sdg12": {
 				"title": "Consumo e produzione responsabili",
 				"description": "IOPRESTO promuove la riduzione dei rifiuti e il riutilizzo degli oggetti, contribuendo così a un modello di consumo più sostenibile. Lo scambio di oggetti usati riduce la necessità di produzione di nuovi beni, contribuendo a un uso più responsabile delle risorse naturali."

@@ -4,5 +4,6 @@
 	<div class="flex flex-col gap-20">
 		<GenericHeroSection />
 		<AboutUs />
+		<EsgObjectives />
 	</div>
 </template>
