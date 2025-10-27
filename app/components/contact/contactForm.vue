@@ -7,7 +7,11 @@
 
 			<UForm :schema="schema" :state="state" @submit="onSubmit">
 				<div class="grid md:grid-cols-2 gap-5">
-					<UFormField :label="t('contactForm.name', 'Nome')" name="name">
+					<UFormField
+						:label="t('contactForm.name', 'Nome')"
+						name="name"
+						class="col-span-2 sm:col-span-1"
+					>
 						<UInput
 							v-model="state.name"
 							placeholder="Mario Rossi"
@@ -16,7 +20,11 @@
 						/>
 					</UFormField>
 
-					<UFormField :label="t('contactForm.email')" name="email">
+					<UFormField
+						:label="t('contactForm.email')"
+						name="email"
+						class="col-span-2 sm:col-span-1"
+					>
 						<UInput
 							v-model="state.email"
 							type="email"
@@ -29,7 +37,7 @@
 					<UFormField
 						:label="t('contactForm.message')"
 						name="message"
-						class="md:col-span-2"
+						class="col-span-2"
 					>
 						<UTextarea
 							v-model="state.message"
