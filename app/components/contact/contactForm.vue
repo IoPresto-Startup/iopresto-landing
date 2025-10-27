@@ -39,6 +39,13 @@
 							class="w-full"
 						/>
 					</UFormField>
+
+					<UAlert
+						:title="t('contactForm.notice')"
+						color="primary"
+						variant="soft"
+						class="col-span-2"
+					/>
 				</div>
 
 				<!-- Bottone con lo stile richiesto -->
@@ -130,32 +137,13 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
 		}
 
 		toast.add({
-			title: t("contactForm.infoTitle", "Invio messaggio"),
-			description: t(
-				"contactForm.infoDesc",
-				"Stai per essere reindirizzato alla tua applicazione email per completare l'invio. Nessun dato viene salvato."
-			),
+			title: t("contactForm.infoTitle"),
+			description: t("contactForm.infoDesc"),
 			color: "info",
-			timeout: 6000
+			duration: 2000
 		})
 
-		const opened = openMailClient(payload)
-
-		if (opened) {
-			toast.success(
-				t(
-					"contactForm.openedClient",
-					"Client email aperto! Controlla la tua app di posta per inviare il messaggio."
-				)
-			)
-		} else {
-			toast.error(
-				t(
-					"contactForm.fallbackCopied",
-					"Impossibile aprire il client di posta automaticamente. Testo copiato negli appunti."
-				)
-			)
-		}
+		setTimeout(() => openMailClient(payload), 2000)
 
 		state.name = ""
 		state.email = ""
