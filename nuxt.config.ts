@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 		"nuxt-viewport"
 	],
 	icon: {
-		mode: "css",
+		mode: "component",
 		serverBundle: "local",
 		clientBundle: {
 			scan: true,
