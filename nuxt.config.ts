@@ -23,9 +23,8 @@ export default defineNuxtConfig({
 	],
 	icon: {
 		mode: "component",
-		clientBundle: {
-			scan: true,
-			sizeLimitKb: 256
+		serverBundle: {
+			remote: "jsdelivr"
 		},
 		collections: ["heroicons", "lucide", "simple-icons"]
 	},
