@@ -23,7 +23,7 @@ export default defineNuxtConfig({
 	],
 	icon: {
 		mode: "component",
-		serverBundle: false,
+		serverBundle: "remote",
 		clientBundle: {
 			scan: true,
 			sizeLimitKb: 256
