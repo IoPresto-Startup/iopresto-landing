@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 	devtools: { enabled: true },
 	css: ["~/assets/css/main.css"],
 	app: {
-		baseURL: "/",
+		baseURL: "/iopresto-landing/",
 		pageTransition: {
 			name: "page",
 			mode: "out-in"
@@ -23,7 +23,7 @@ export default defineNuxtConfig({
 	],
 	icon: {
 		mode: "component",
-		serverBundle: "local",
+		serverBundle: false,
 		clientBundle: {
 			scan: true,
 			sizeLimitKb: 256
