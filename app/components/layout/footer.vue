@@ -8,9 +8,8 @@
 			<div class="md:w-1/3">
 				<h2 class="text-2xl font-bold mb-4">{{ $t("heroSection.title") }}</h2>
 				<p class="mb-2 text-sm md:w-3/4">{{ $t("footer.value") }}</p>
-				<p class="mb-6 text-sm md:w-3/4">{{ $t("footer.innovative") }}</p>
 			</div>
-
+			<!-- Quick links -->
 			<div class="md:w-1/5">
 				<h3 class="text-xl font-semibold mb-4">
 					{{ $t("footer.quickLinks") }}
@@ -23,7 +22,7 @@
 					</li>
 				</ul>
 			</div>
-
+			<!-- Contacts -->
 			<div class="md:w-1/5">
 				<h3 class="text-xl font-semibold mb-4">{{ $t("footer.contact") }}</h3>
 				<ul class="space-y-4">
