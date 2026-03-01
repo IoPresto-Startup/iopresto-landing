@@ -12,6 +12,9 @@
 
 		<template #right>
 			<UColorModeButton color="primary" />
+			<UDropdownMenu :items="dropDownItems">
+				<UButton icon="lucide:languages" variant="ghost" />
+			</UDropdownMenu>
 		</template>
 
 		<!-- Responsive menu -->
@@ -26,20 +29,35 @@
 </template>
 
 <script setup lang="ts">
-import type { NavigationMenuItem } from "@nuxt/ui"
+import type { DropdownMenuItem, NavigationMenuItem } from "@nuxt/ui"
 
 const route = useRoute()
+const {locale, locales, setLocale} = useI18n()
+const localePath = useLocalePath()
+
+const availableLocales = computed(() => {
+  return locales.value.filter(i => i.code !== locale.value)
+})
+
+const dropDownItems = computed(() => {
+	return availableLocales.value.map((l) => ({
+		label: l.name,
+		onSelect: () => {
+			setLocale(l.code)
+		}
+	}))
+})
 
 const items = computed<NavigationMenuItem[]>(() => [
 	{
 		label: "Home",
-		to: "/",
-		active: route.path === "/"
+		to: localePath('/'),
+		active: route.path === localePath("/")
 	},
 	{
-		label: "Contattaci",
-		to: "/contattaci",
-		active: route.path === "/contattaci"
+		label: $t('contactForm.title'),
+		to: localePath("/contattaci"),
+		active: route.path === localePath("/contattaci")
 	}
 ])
 </script>

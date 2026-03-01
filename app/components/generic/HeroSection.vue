@@ -29,14 +29,17 @@ const buttonSize = computed(() => {
 					<p class="font-medium text-lg md:text-xl lg:text-2xl text-center">
 						{{ $t("heroSection.description") }}
 					</p>
-					<UButton
-						variant="solid"
-						color="primary"
-						class="text-white"
-						:size="buttonSize"
-					>
-						{{ $t("heroSection.cta") }}
-					</UButton>
+					<UTooltip :text="$t('heroSection.coming-soon')" arrow :delay-duration="0">
+						<UButton
+						disabled
+							variant="solid"
+							color="primary"
+							class="text-white"
+							:size="buttonSize"
+						>
+							{{ $t("heroSection.cta") }}
+						</UButton>
+					</UTooltip>
 				</div>
 			</template>
 		</BaseCard>

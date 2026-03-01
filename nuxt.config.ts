@@ -33,10 +33,18 @@ export default defineNuxtConfig({
 		locales: [
 			{
 				code: "it",
-				name: "Italiano",
-				file: "it.json"
+				file: "it.json",
+				language: "Italiano",
+				name: "Italiano"
+			},
+			{
+				code: 'en',
+				file: 'en.json',
+				language: "English",
+				name: "English",
 			}
-		]
+		],
+		langDir: 'locales/'
 	},
 	imports: {
 		autoImport: true

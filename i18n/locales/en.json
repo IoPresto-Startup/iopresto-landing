@@ -1,0 +1,97 @@
+{
+    "about-us": {
+        "title": "About Us",
+        "real-description": "We are an innovative startup that enables residents in Italy to meet and borrow used items belonging to various categories, such as bricolage, sports equipment, kitchen tools, gardening supplies, and educational materials. After registering, users accessing our digital platform can post items they no longer use and search for those they need.{space}Communication and logistics regarding the pickup and delivery of items will be managed directly between users, fostering direct interaction and building a community. The advantages of this solution, in terms of sustainability, are fully aligned with ESG (Environmental, Social, and Governance) criteria. Offering the possibility to access goods without purchasing them generates a significant positive environmental impact, reducing the excessive exploitation of natural resources and contributing to the decrease of carbon emissions.{space}In recent years, the theme of sustainability and waste reduction has taken a central role in the agendas of governments and organizations globally. In Italy, where the consumption of goods is particularly high, significant challenges emerge related to excess waste and the efficient use of resources. According to data from ISPRA (Institute for Environmental Protection and Research), every Italian citizen produces an average of about 499 kg of waste per year, much of which could be reused. In this context, initiatives and platforms promoting the circular economy are emerging as innovative solutions to reduce environmental impact.{space}The purpose of our platform is to reduce unnecessary purchases of low-frequency use products, preventing them from being disposed of prematurely, strengthening social ties, and promoting a culture based on sharing and reuse. We aspire to become a reference point in the sustainable startup sector in Florence, with the goal of extending our impact throughout Tuscany and, subsequently, internationally.",
+        "cta": "Find out more",
+        "instagram": "ioprestoitalia"
+    },
+    "footer": {
+        "value": "Give value to used objects: borrow them for free.",
+        "quickLinks": "Quick Links",
+        "contattaci": "Contact Us",
+        "categorie": "Categories",
+        "esg": "ESG",
+        "comeFunziona": "How It Works",
+        "scriviContattaci": "Message Us",
+        "contact": "Contact",
+        "email": "{email}",
+        "phone": "+39 324 5499 866",
+        "privacy": "Privacy Policy",
+        "copyright": "Copyright © 2025 iopresto.com | Created as part of project WAcademy.io"
+    },
+    "heroBanner": {
+        "startAdventure": "START YOUR ADVENTURE",
+        "title": "Explore our platform",
+        "description": "Borrow, swap, and share used items, for free and with ease",
+        "cta": "Contact Us"
+    },
+    "heroSection": {
+        "followUs": "Follow Us",
+        "title": "IOPRESTO",
+        "description": "Borrow, swap, and share used items, for free and with simplicity",
+        "cta": "Start",
+        "coming-soon": "We are working hard to launch our digital platform. Stay tuned!"
+    },
+    "contactForm": {
+        "title": "Contact Us",
+        "subtitle": "Need help? Write to us and we will get back to you shortly.",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send",
+        "sending": "Sending...",
+        "successTitle": "Message sent!",
+        "successDesc": "Thank you for contacting us. We will reply soon.",
+        "openedClient": "Mail client opened. Please check your mail app to send the message.",
+        "fallbackCopied": "Could not open mail client automatically. Text copied to clipboard.",
+        "errorGeneric": "Error sending message",
+        "notice": "You will be redirected to your mail client to complete the sending process.",
+        "infoTitle": "Sending message",
+        "infoDesc": "You are about to be redirected to your email application to complete the sending process. No data is stored.",
+        "errors": {
+            "name": "Please enter at least 2 characters",
+            "email": "Please enter a valid email",
+            "message": "The message must be at least 10 characters long"
+        }
+    },
+    "pageHero": {
+        "home": "Home",
+        "pages": {
+            "esg": "ESG",
+            "contattaci": "Contact Us"
+        }
+    },
+    "objectives": {
+        "title": "Development Goals",
+        "subtitle": "IOPRESTO, through its platform for borrowing used items and the promotion of a circular economy, contributes to several United Nations Sustainable Development Goals (SDGs):"
+    },
+    "esg": {
+        "sdgs": {
+            "sdg12": {
+                "title": "Responsible Consumption and Production",
+                "description": "IOPRESTO promotes waste reduction and the reuse of objects, thus contributing to a more sustainable consumption model. The exchange of used items reduces the need for the production of new goods, contributing to a more responsible use of natural resources."
+            },
+            "sdg13": {
+                "title": "Climate Action",
+                "description": "By reducing the production of new items and encouraging reuse, IOPRESTO contributes to the reduction of carbon emissions related to the production and transport of goods, favoring a lower environmental impact."
+            },
+            "sdg8": {
+                "title": "Decent Work and Economic Growth",
+                "description": "IOPRESTO creates opportunities for inclusive and sustainable economic growth by promoting a culture of sharing and exchange that reduces costs for consumers and creates new business dynamics related to the circular economy."
+            },
+            "sdg9": {
+                "title": "Industry, Innovation, and Infrastructure",
+                "description": "The IOPRESTO platform is an example of technological innovation that fosters the development of a digital infrastructure capable of supporting the circular economy and the sharing of goods at a community level."
+            },
+            "sdg11": {
+                "title": "Sustainable Cities and Communities",
+                "description": "IOPRESTO promotes more sustainable urban living by facilitating access to goods without the need for purchase, and contributing to reducing the ecological footprint of cities through a model of item exchange."
+            },
+            "sdg17": {
+                "title": "Partnerships for the Goals",
+                "description": "By collaborating with other organizations, companies, and NGOs to promote sustainability and the circular economy, IOPRESTO contributes to strengthening global partnerships to achieve sustainable development goals."
+            },
+            "conclusion": "In summary, IOPRESTO is primarily aligned with goals 12 (Responsible Consumption and Production), 13 (Climate Action), and 8 (Decent Work and Economic Growth), but can have a positive impact on many other goals related to sustainability and economic inclusion."
+        }
+    }
+}

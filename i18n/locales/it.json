@@ -27,9 +27,10 @@
 	},
 	"heroSection": {
 		"followUs": "Seguici",
-		"title": "Iopresto",
+		"title": "IOPRESTO",
 		"description": "Prendi in prestito, scambia e condividi oggetti usati, gratis e con semplicità",
-		"cta": "Inizia"
+		"cta": "Inizia",
+		"coming-soon": "Stiamo lavorando sodo per lanciare la nostra piattaforma digitale. Resta sintonizzato!"
 	},
 	"contactForm": {
 		"title": "Contattaci",
@@ -62,7 +63,7 @@
 	},
 	"objectives": {
 		"title": "Obbiettivi di sviluppo",
-		"subtitle": "Iopresto, con la sua piattaforma di PRESTITO di oggetti usati e la promozione di un'economia circolare, contribuisce a diversi obbiettivi di sviluppo sostenibile (SDGs) delle Nazioni Unite:"
+		"subtitle": "IOPRESTO, con la sua piattaforma di prestito di oggetti usati e la promozione di un'economia circolare, contribuisce a diversi obbiettivi di sviluppo sostenibile (SDGs) delle Nazioni Unite:"
 	},
 	"esg": {
 		"sdgs": {
