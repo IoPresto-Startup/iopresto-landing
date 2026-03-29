@@ -18,6 +18,11 @@ jobs:
       - run: npm install
       - run: npm install --platform=linux --arch=x64 sharp
       - run: NUXT_APP_BASE_URL=/ npx nuxt build --preset github_pages
+        env:
+          NUXT_PUBLIC_EMAILJS_SERVICE_ID: ${{ secrets.EMAILJS_SERVICE_ID }}
+          NUXT_PUBLIC_EMAILJS_TEMPLATE_ID: ${{ secrets.EMAILJS_TEMPLATE_ID_PROD }}
+          NUXT_PUBLIC_EMAILJS_PUBLIC_KEY: ${{ secrets.EMAILJS_PUBLIC_KEY }}
+          NUXT_PUBLIC_GOOGLE_MAPS_KEY: ${{ secrets.GOOGLE_MAPS_KEY }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

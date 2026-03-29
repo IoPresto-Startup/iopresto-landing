@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { ref, onMounted, onUnmounted, watch } from "vue"
-import { Loader } from "@googlemaps/js-api-loader"
+import { setOptions, importLibrary } from "@googlemaps/js-api-loader"
 
 const props = defineProps<{
   modelValue: string
@@ -35,12 +35,8 @@ onMounted(async () => {
     return
   }
   try {
-    const loader = new Loader({
-      apiKey: props.apiKey,
-      version: "weekly",
-      libraries: ["places"]
-    })
-    await loader.load()
+    setOptions({ apiKey: props.apiKey, version: "weekly" })
+    await importLibrary("places")
     isLoaded.value = true
 
     if (!inputRef.value) return
