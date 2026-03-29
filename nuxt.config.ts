@@ -38,13 +38,13 @@ export default defineNuxtConfig({
 				name: "Italiano"
 			},
 			{
-				code: 'en',
-				file: 'en.json',
+				code: "en",
+				file: "en.json",
 				language: "English",
-				name: "English",
+				name: "English"
 			}
 		],
-		langDir: 'locales/'
+		langDir: "locales/"
 	},
 	imports: {
 		autoImport: true
@@ -57,6 +57,13 @@ export default defineNuxtConfig({
 			lg: 1024,
 			xl: 1280,
 			"2xl": 1536
+		}
+	},
+	runtimeConfig: {
+		public: {
+			emailjsServiceId: "",
+			emailjsTemplateId: "",
+			emailjsPublicKey: ""
 		}
 	}
 })
