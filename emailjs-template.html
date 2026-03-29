@@ -1,0 +1,82 @@
+<div style="font-family: system-ui, sans-serif, Arial; font-size: 14px; color: #2c3e50; max-width: 600px">
+
+  <div style="margin-bottom: 20px">
+    Una nuova richiesta è stata ricevuta tramite il form <strong>Presta con noi</strong>.
+  </div>
+
+  <div style="padding: 15px 0; border-width: 1px 0; border-style: dashed; border-color: lightgrey; margin-bottom: 20px">
+
+    <!-- CHI SEI -->
+    <table role="presentation" style="width: 100%; margin-bottom: 16px">
+      <tr>
+        <td style="vertical-align: top; padding: 6px 10px 0 0">
+          <div style="padding: 6px 10px; background-color: aliceblue; border-radius: 5px; font-size: 22px" role="img">👤</div>
+        </td>
+        <td style="vertical-align: top">
+          <div style="color: #2c3e50; font-size: 16px"><strong>{{full_name}}</strong></div>
+          <div style="color: #aaaaaa; font-size: 12px">{{submitted_at}}</div>
+          <div style="margin-top: 6px; font-size: 14px">
+            <span style="color: #888">Documento:</span> {{document}}<br>
+            <span style="color: #888">Città:</span> {{city}}
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- RICHIESTA -->
+    <table role="presentation" style="width: 100%; margin-bottom: 16px">
+      <tr>
+        <td style="vertical-align: top; padding: 6px 10px 0 0">
+          <div style="padding: 6px 10px; background-color: #fff3e0; border-radius: 5px; font-size: 22px" role="img">📦</div>
+        </td>
+        <td style="vertical-align: top">
+          <div style="color: #2c3e50; font-size: 15px"><strong>{{request_type}}</strong> — {{object}}</div>
+          <div style="margin-top: 6px; font-size: 14px">
+            <span style="color: #888">Categoria:</span> {{category}}<br>
+            <span style="color: #888">Durata:</span> {{duration}}
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- ZONA -->
+    <table role="presentation" style="width: 100%; margin-bottom: 16px">
+      <tr>
+        <td style="vertical-align: top; padding: 6px 10px 0 0">
+          <div style="padding: 6px 10px; background-color: #e8f5e9; border-radius: 5px; font-size: 22px" role="img">📍</div>
+        </td>
+        <td style="vertical-align: top">
+          <div style="color: #2c3e50; font-size: 15px"><strong>{{address}}</strong></div>
+          <div style="margin-top: 6px; font-size: 14px">
+            <span style="color: #888">Raggio:</span> {{radius}}
+          </div>
+        </td>
+      </tr>
+    </table>
+
+    <!-- CONTATTI -->
+    <table role="presentation" style="width: 100%">
+      <tr>
+        <td style="vertical-align: top; padding: 6px 10px 0 0">
+          <div style="padding: 6px 10px; background-color: #f3e5f5; border-radius: 5px; font-size: 22px" role="img">📞</div>
+        </td>
+        <td style="vertical-align: top">
+          <div style="color: #2c3e50; font-size: 15px"><strong>{{email}}</strong></div>
+          <div style="margin-top: 6px; font-size: 14px">
+            <span style="color: #888">WhatsApp:</span> {{whatsapp}}<br>
+            <span style="color: #888">Preferenza:</span> {{contact_preference}}<br>
+            <span style="color: #888">Note:</span> {{notes}}
+          </div>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <!-- RIGA EXCEL -->
+  <div style="background-color: #f5f5f5; border-radius: 5px; padding: 12px; font-size: 12px; color: #555">
+    <div style="margin-bottom: 6px; font-weight: bold; color: #2c3e50">📊 Riga Excel (copia e incolla nel foglio)</div>
+    <div style="font-family: monospace; word-break: break-all">{{excel_row}}</div>
+  </div>
+
+</div>
