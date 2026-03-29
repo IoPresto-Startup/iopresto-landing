@@ -23,6 +23,9 @@ export default defineNuxtConfig({
 	],
 	icon: {
 		mode: "component",
+		clientBundle: {
+			scan: true
+		},
 		serverBundle: {
 			remote: "jsdelivr"
 		},
