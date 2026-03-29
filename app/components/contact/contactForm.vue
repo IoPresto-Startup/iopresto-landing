@@ -37,7 +37,9 @@
 							v-model:durationOther="state.durationOther" :errors="errors" class="pt-6" />
 					</template>
 					<template #step3>
-						<ContactStep3 v-model:address="state.address" v-model:radius="state.radius" :errors="errors" class="pt-6" />
+						<ContactStep3 v-model:street="state.street" v-model:addressCity="state.addressCity"
+							v-model:province="state.province" v-model:postalCode="state.postalCode" v-model:radius="state.radius"
+							:errors="errors" class="pt-6" />
 					</template>
 					<template #step4>
 						<ContactStep4 v-model:email="state.email" v-model:whatsapp="state.whatsapp"
@@ -95,7 +97,10 @@ const state = reactive({
 	category: "",
 	duration: "",
 	durationOther: "",
-	address: "",
+	street: "",
+	addressCity: "",
+	province: "",
+	postalCode: "",
 	radius: "",
 	email: "",
 	whatsapp: "",
@@ -150,7 +155,7 @@ function validateStep(step: number): boolean {
 	const stepKeys: Record<number, string[]> = {
 		1: ["fullName", "document", "city"],
 		2: ["requestType", "object", "category", "duration", "durationOther"],
-		3: ["address", "radius"],
+		3: ["street", "addressCity", "province", "postalCode", "radius"],
 		4: ["email", "contactPreference"]
 	}
 	for (const key of stepKeys[step]) delete errors[key]
@@ -189,8 +194,17 @@ function validateStep(step: number): boolean {
 		}
 	}
 	if (step === 3) {
-		if (!state.address || state.address.trim().length < 3) {
-			errors.address = t("contactForm.errors.address"); valid = false
+		if (!state.street || state.street.trim().length < 3) {
+			errors.street = t("contactForm.errors.street"); valid = false
+		}
+		if (!state.addressCity || state.addressCity.trim().length < 2) {
+			errors.addressCity = t("contactForm.errors.addressCity"); valid = false
+		}
+		if (!state.province || !/^[A-Za-z]{2}$/.test(state.province.trim())) {
+			errors.province = t("contactForm.errors.province"); valid = false
+		}
+		if (!state.postalCode || !/^[0-9]{5}$/.test(state.postalCode.trim())) {
+			errors.postalCode = t("contactForm.errors.postalCode"); valid = false
 		}
 		if (!state.radius) {
 			errors.radius = t("contactForm.errors.radius"); valid = false
@@ -235,7 +249,11 @@ function buildTemplateParams() {
 		object: state.object,
 		category: categoryLabel,
 		duration: durationLabel,
-		address: state.address,
+		address: `${state.street}, ${state.postalCode} ${state.addressCity} (${state.province.toUpperCase()})`,
+		street: state.street,
+		addressCity: state.addressCity,
+		province: state.province.toUpperCase(),
+		postalCode: state.postalCode,
 		radius: radiusLabel,
 		email: state.email,
 		whatsapp: state.whatsapp || "-",
@@ -246,7 +264,7 @@ function buildTemplateParams() {
 		excel_row: [
 			state.fullName, state.document, state.city,
 			requestTypeLabel, state.object, categoryLabel, durationLabel,
-			state.address, radiusLabel,
+			`${state.street}, ${state.postalCode} ${state.addressCity} (${state.province.toUpperCase()})`, radiusLabel,
 			state.email, state.whatsapp || "", preferenceLabel, state.notes || "",
 			now
 		].join("\t")
@@ -278,7 +296,7 @@ function resetForm() {
 	Object.assign(state, {
 		fullName: "", document: "", city: "",
 		requestType: "", object: "", category: "", duration: "", durationOther: "",
-		address: "", radius: "",
+		street: "", addressCity: "", province: "", postalCode: "", radius: "",
 		email: "", whatsapp: "", contactPreference: "", notes: ""
 	})
 	for (const key in errors) delete errors[key]
