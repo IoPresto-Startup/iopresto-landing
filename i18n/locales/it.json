@@ -96,7 +96,7 @@
 		"errorDesc": "Controlla la connessione e riprova. Se il problema persiste, scrivici a support{'@'}iopresto.com.",
 		"errors": {
 			"fullName": "Inserisci nome e cognome (almeno 2 caratteri)",
-			"document": "Inserisci il numero del documento o codice fiscale",
+			"document": "Formato non valido: inserisci un codice fiscale (16 caratteri) o il numero del documento",
 			"city": "Seleziona la tua città",
 			"requestType": "Seleziona cosa vuoi fare",
 			"object": "Descrivi l'oggetto (almeno 3 caratteri)",

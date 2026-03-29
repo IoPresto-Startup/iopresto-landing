@@ -1,7 +1,8 @@
 <template>
   <div class="space-y-5">
     <UFormField :label="t('contactForm.fields.address')" :error="errors.address" name="address">
-      <UInput v-model="address" size="md" :placeholder="t('contactForm.fields.addressPlaceholder')" class="w-full" />
+      <ContactAddressAutocomplete v-model="address" :api-key="config.public.googleMapsKey"
+        :placeholder="t('contactForm.fields.addressPlaceholder')" :has-error="!!errors.address" class="w-full" />
     </UFormField>
 
     <UFormField :label="t('contactForm.fields.radius')" :error="errors.radius" name="radius">
@@ -20,6 +21,7 @@ import { computed } from "vue"
 import { useI18n } from "vue-i18n"
 
 const { t } = useI18n()
+const config = useRuntimeConfig()
 
 const address = defineModel<string>("address", { required: true })
 const radius = defineModel<string>("radius", { required: true })

@@ -161,7 +161,10 @@ function validateStep(step: number): boolean {
 		if (!state.fullName || state.fullName.trim().length < 2) {
 			errors.fullName = t("contactForm.errors.fullName"); valid = false
 		}
-		if (!state.document || state.document.trim().length < 3) {
+		const doc = state.document.trim().toUpperCase()
+		const cfRx = /^[A-Z]{6}[0-9]{2}[A-Z][0-9]{2}[A-Z][0-9]{3}[A-Z]$/
+		const docRx = /^[A-Z0-9]{5,20}$/i
+		if (!doc || (!cfRx.test(doc) && !docRx.test(doc))) {
 			errors.document = t("contactForm.errors.document"); valid = false
 		}
 		if (!state.city) {
@@ -254,10 +257,12 @@ async function onSubmit() {
 	if (!validateStep(4)) return
 	sending.value = true
 	try {
+		const params = buildTemplateParams()
+		console.log("[EmailJS] template params:", params)
 		await emailjs.send(
 			config.public.emailjsServiceId,
 			config.public.emailjsTemplateId,
-			buildTemplateParams(),
+			params,
 			{ publicKey: config.public.emailjsPublicKey }
 		)
 		submitted.value = true

@@ -63,7 +63,8 @@ export default defineNuxtConfig({
 		public: {
 			emailjsServiceId: "",
 			emailjsTemplateId: "",
-			emailjsPublicKey: ""
+			emailjsPublicKey: "",
+			googleMapsKey: ""
 		}
 	}
 })
