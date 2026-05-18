@@ -3,7 +3,7 @@
 		<template #title>
 			<NuxtImg
 				src="/img/iopresto_logo_2.png"
-				alt="IoPresto Logo"
+				alt="Io Presto"
 				class="h-12"
 			/>
 		</template>
