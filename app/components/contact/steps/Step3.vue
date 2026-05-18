@@ -30,6 +30,12 @@
         </UButton>
       </div>
     </UFormField>
+
+    <UFormField v-if="radius === 'altro'" :label="t('contactForm.fields.radiusOtherLabel')" :error="errors.radiusOther"
+      name="radiusOther">
+      <UInput v-model="radiusOther" size="md" :placeholder="t('contactForm.fields.radiusOtherPlaceholder')"
+        class="w-full" />
+    </UFormField>
   </div>
 </template>
 
@@ -44,12 +50,14 @@ const addressCity = defineModel<string>("addressCity", { required: true })
 const province = defineModel<string>("province", { required: true })
 const postalCode = defineModel<string>("postalCode", { required: true })
 const radius = defineModel<string>("radius", { required: true })
+const radiusOther = defineModel<string>("radiusOther", { required: true })
 
 defineProps<{ errors: Record<string, string> }>()
 
 const radiusOptions = computed(() => [
   { value: "1km_5km", label: t("contactForm.fields.radius1") },
   { value: "5km_8km", label: t("contactForm.fields.radius2") },
-  { value: "8km_12km", label: t("contactForm.fields.radius3") }
+  { value: "8km_12km", label: t("contactForm.fields.radius3") },
+  { value: "altro", label: t("contactForm.fields.radiusOther") }
 ])
 </script>

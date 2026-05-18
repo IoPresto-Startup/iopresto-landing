@@ -12,5 +12,7 @@ defineI18nRoute({
 		<GenericHeroSection />
 		<AboutUs />
 		<EsgObjectives />
+		<Reviews />
+		<Faq />
 	</div>
 </template>

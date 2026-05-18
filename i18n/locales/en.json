@@ -1,7 +1,7 @@
 {
     "about-us": {
         "title": "About Us",
-        "real-description": "We are an innovative startup that enables residents in Italy to meet and borrow used items belonging to various categories, such as bricolage, sports equipment, kitchen tools, gardening supplies, and educational materials. After registering, users accessing our digital platform can post items they no longer use and search for those they need.{space}Communication and logistics regarding the pickup and delivery of items will be managed directly between users, fostering direct interaction and building a community. The advantages of this solution, in terms of sustainability, are fully aligned with ESG (Environmental, Social, and Governance) criteria. Offering the possibility to access goods without purchasing them generates a significant positive environmental impact, reducing the excessive exploitation of natural resources and contributing to the decrease of carbon emissions.{space}In recent years, the theme of sustainability and waste reduction has taken a central role in the agendas of governments and organizations globally. In Italy, where the consumption of goods is particularly high, significant challenges emerge related to excess waste and the efficient use of resources. According to data from ISPRA (Institute for Environmental Protection and Research), every Italian citizen produces an average of about 499 kg of waste per year, much of which could be reused. In this context, initiatives and platforms promoting the circular economy are emerging as innovative solutions to reduce environmental impact.{space}The purpose of our platform is to reduce unnecessary purchases of low-frequency use products, preventing them from being disposed of prematurely, strengthening social ties, and promoting a culture based on sharing and reuse. We aspire to become a reference point in the sustainable startup sector in Florence, with the goal of extending our impact throughout Tuscany and, subsequently, internationally.",
+        "real-description": "IOPRESTO è un team di persone appassionate di sostenibilità, condivisione ed economia circolare, nato con l'obiettivo di rendere più semplice il prestito di oggetti tra privati.{space}Attraverso la nostra piattaforma digitale, gli utenti possono pubblicare oggetti che non utilizzano più — come utensili, articoli sportivi, materiali da cucina, giardinaggio o studio — e trovare facilmente ciò di cui hanno bisogno senza dover acquistare nuovo.{space}Crediamo nella forza della community e nelle connessioni locali: per questo favoriamo il contatto diretto tra utenti per il ritiro e la consegna degli oggetti, creando relazioni reali e riducendo gli sprechi.{space}Il nostro obiettivo è dare una seconda vita agli oggetti, limitare gli acquisti superflui e promuovere uno stile di vita più sostenibile e collaborativo.{space}Partendo da Firenze, vogliamo costruire una community sempre più grande, con un impatto positivo prima in Toscana e poi in tutta Italia.",
         "cta": "Find out more",
         "instagram": "ioprestoitalia"
     },
@@ -16,6 +16,8 @@
         "contact": "Contact",
         "email": "{email}",
         "phone": "+39 324 5499 866",
+        "vatNote": "P. IVA in fase di costituzione",
+        "linkedin": "IoPresto",
         "privacy": "Privacy Policy",
         "copyright": "Copyright © 2025 iopresto.com | Created as part of project WAcademy.io"
     },
@@ -53,6 +55,7 @@
             "requestType": "Cosa vuoi fare?",
             "requestTypeBorrow": "PRENDO IN PRESTITO",
             "requestTypeLend": "PRESTO",
+            "requestTypeBoth": "ENTRAMBI",
             "object": "Oggetto",
             "objectPlaceholder": "Es. trapano, pentola a pressione, tenda da campeggio...",
             "category": "Categoria",
@@ -60,6 +63,8 @@
             "categoryBooks": "Libri e riviste",
             "categorySport": "Sport",
             "categoryOther": "Altro",
+            "categoryOtherLabel": "Specifica la categoria",
+            "categoryOtherPlaceholder": "Es. cucina, giochi, elettronica...",
             "duration": "Durata",
             "duration1Day": "1 giorno",
             "duration3Days": "3 giorni",
@@ -78,6 +83,9 @@
             "radius1": "1 km – 5 km",
             "radius2": "5 km – 8 km",
             "radius3": "8 km – 12 km",
+            "radiusOther": "Altro",
+            "radiusOtherLabel": "Specifica la distanza o zona",
+            "radiusOtherPlaceholder": "Es. zona nord Firenze, max 15 km...",
             "email": "Email",
             "emailPlaceholder": "mario{'@'}esempio.com",
             "whatsapp": "Numero WhatsApp",
@@ -87,7 +95,14 @@
             "preferenceWhatsapp": "WhatsApp",
             "preferenceIndifferent": "Indifferente",
             "notes": "Note aggiuntive",
-            "notesPlaceholder": "Qualsiasi altra cosa vorresti dirci..."
+            "notesPlaceholder": "Qualsiasi altra cosa vorresti dirci...",
+            "photo": "Foto dell'oggetto (facoltativa)",
+            "consentsTitle": "Consensi obbligatori",
+            "acceptTermsPrefix": "Ho letto e accetto i",
+            "acceptTermsLink": "Termini e Condizioni",
+            "acceptPrivacyPrefix": "Ho letto e accetto la",
+            "acceptPrivacyLink": "Privacy Policy",
+            "acceptMarketing": "Acconsento a ricevere comunicazioni promozionali e di marketing (facoltativo)"
         },
         "nav": {
             "next": "Avanti",
@@ -115,8 +130,36 @@
             "postalCode": "Inserisci un CAP valido (5 cifre)",
             "radius": "Seleziona il raggio di spostamento",
             "email": "Inserisci un'email valida",
-            "contactPreference": "Seleziona una preferenza di contatto"
+            "contactPreference": "Seleziona una preferenza di contatto",
+            "categoryOther": "Specifica la categoria",
+            "radiusOther": "Specifica la distanza o zona",
+            "acceptTerms": "Devi accettare i Termini e Condizioni per continuare",
+            "acceptPrivacy": "Devi accettare la Privacy Policy per continuare"
         }
+    },
+    "reviews": {
+        "title": "Cosa dicono di noi"
+    },
+    "faq": {
+        "title": "Domande frequenti",
+        "whatsappCta": "Hai altre domande? Scrivici su WhatsApp",
+        "q1": "Come funziona IOPRESTO?",
+        "a1": "IOPRESTO è una piattaforma che permette di pubblicare oggetti da prestare e trovare ciò di cui hai bisogno nella tua zona. Il contatto e la logistica avvengono direttamente tra gli utenti.",
+        "q2": "Il servizio è gratuito?",
+        "a2": "Sì, IOPRESTO è completamente gratuito. Non ci sono costi per registrarsi, pubblicare oggetti o prendere in prestito.",
+        "q3": "Come vengono gestiti il ritiro e la consegna?",
+        "a3": "Il ritiro e la consegna vengono concordati direttamente tra l'utente che presta e quello che prende in prestito. IOPRESTO facilita il contatto ma non gestisce la logistica.",
+        "q4": "In quali città è disponibile IOPRESTO?",
+        "a4": "Al momento IOPRESTO è disponibile a Firenze e Trento. Stiamo lavorando per espanderci presto in altre città!"
+    },
+    "privacy": {
+        "intro": "Leggi la nostra Privacy Policy per capire come trattiamo i tuoi dati personali.",
+        "download": "Scarica Privacy Policy (PDF)"
+    },
+    "termini": {
+        "title": "Termini e Condizioni",
+        "intro": "Leggi i nostri Termini e Condizioni prima di utilizzare la piattaforma.",
+        "download": "Scarica Termini e Condizioni (PDF)"
     },
     "pageHero": {
         "home": "Home",

@@ -16,6 +16,8 @@
 		"contact": "Contact",
 		"email": "{email}",
 		"phone": "+39 324 5499 866",
+		"vatNote": "P. IVA in fase di costituzione",
+		"linkedin": "IoPresto",
 		"privacy": "Politica sulla riservatezza",
 		"copyright": "Copyright © 2025 iopresto.com | Create as part of project WAcademy.io"
 	},
@@ -53,6 +55,7 @@
 			"requestType": "Cosa vuoi fare?",
 			"requestTypeBorrow": "PRENDO IN PRESTITO",
 			"requestTypeLend": "PRESTO",
+			"requestTypeBoth": "ENTRAMBI",
 			"object": "Oggetto",
 			"objectPlaceholder": "Es. trapano, pentola a pressione, tenda da campeggio...",
 			"category": "Categoria",
@@ -60,6 +63,8 @@
 			"categoryBooks": "Libri e riviste",
 			"categorySport": "Sport",
 			"categoryOther": "Altro",
+			"categoryOtherLabel": "Specifica la categoria",
+			"categoryOtherPlaceholder": "Es. cucina, giochi, elettronica...",
 			"duration": "Durata",
 			"duration1Day": "1 giorno",
 			"duration3Days": "3 giorni",
@@ -78,6 +83,9 @@
 			"radius1": "1 km – 5 km",
 			"radius2": "5 km – 8 km",
 			"radius3": "8 km – 12 km",
+			"radiusOther": "Altro",
+			"radiusOtherLabel": "Specifica la distanza o zona",
+			"radiusOtherPlaceholder": "Es. zona nord Firenze, max 15 km...",
 			"email": "Email",
 			"emailPlaceholder": "mario{'@'}esempio.com",
 			"whatsapp": "Numero WhatsApp",
@@ -87,7 +95,14 @@
 			"preferenceWhatsapp": "WhatsApp",
 			"preferenceIndifferent": "Indifferente",
 			"notes": "Note aggiuntive",
-			"notesPlaceholder": "Qualsiasi altra cosa vorresti dirci..."
+			"notesPlaceholder": "Qualsiasi altra cosa vorresti dirci...",
+			"photo": "Foto dell'oggetto (facoltativa)",
+			"consentsTitle": "Consensi obbligatori",
+			"acceptTermsPrefix": "Ho letto e accetto i",
+			"acceptTermsLink": "Termini e Condizioni",
+			"acceptPrivacyPrefix": "Ho letto e accetto la",
+			"acceptPrivacyLink": "Privacy Policy",
+			"acceptMarketing": "Acconsento a ricevere comunicazioni promozionali e di marketing (facoltativo)"
 		},
 		"nav": {
 			"next": "Avanti",
@@ -115,8 +130,36 @@
 			"postalCode": "Inserisci un CAP valido (5 cifre)",
 			"radius": "Seleziona il raggio di spostamento",
 			"email": "Inserisci un'email valida",
-			"contactPreference": "Seleziona una preferenza di contatto"
+			"contactPreference": "Seleziona una preferenza di contatto",
+			"categoryOther": "Specifica la categoria",
+			"radiusOther": "Specifica la distanza o zona",
+			"acceptTerms": "Devi accettare i Termini e Condizioni per continuare",
+			"acceptPrivacy": "Devi accettare la Privacy Policy per continuare"
 		}
+	},
+	"reviews": {
+		"title": "Cosa dicono di noi"
+	},
+	"faq": {
+		"title": "Domande frequenti",
+		"whatsappCta": "Hai altre domande? Scrivici su WhatsApp",
+		"q1": "Come funziona IOPRESTO?",
+		"a1": "IOPRESTO è una piattaforma che permette di pubblicare oggetti da prestare e trovare ciò di cui hai bisogno nella tua zona. Il contatto e la logistica avvengono direttamente tra gli utenti.",
+		"q2": "Il servizio è gratuito?",
+		"a2": "Sì, IOPRESTO è completamente gratuito. Non ci sono costi per registrarsi, pubblicare oggetti o prendere in prestito.",
+		"q3": "Come vengono gestiti il ritiro e la consegna?",
+		"a3": "Il ritiro e la consegna vengono concordati direttamente tra l'utente che presta e quello che prende in prestito. IOPRESTO facilita il contatto ma non gestisce la logistica.",
+		"q4": "In quali città è disponibile IOPRESTO?",
+		"a4": "Al momento IOPRESTO è disponibile a Firenze e Trento. Stiamo lavorando per espanderci presto in altre città!"
+	},
+	"privacy": {
+		"intro": "Leggi la nostra Privacy Policy per capire come trattiamo i tuoi dati personali.",
+		"download": "Scarica Privacy Policy (PDF)"
+	},
+	"termini": {
+		"title": "Termini e Condizioni",
+		"intro": "Leggi i nostri Termini e Condizioni prima di utilizzare la piattaforma.",
+		"download": "Scarica Termini e Condizioni (PDF)"
 	},
 	"pageHero": {
 		"home": "Casa",

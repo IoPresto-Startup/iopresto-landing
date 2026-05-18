@@ -33,17 +33,20 @@
 					</template>
 					<template #step2>
 						<ContactStep2 v-model:requestType="state.requestType" v-model:object="state.object"
-							v-model:category="state.category" v-model:duration="state.duration"
-							v-model:durationOther="state.durationOther" :errors="errors" class="pt-6" />
+							v-model:category="state.category" v-model:categoryOther="state.categoryOther"
+							v-model:duration="state.duration" v-model:durationOther="state.durationOther" :errors="errors"
+							class="pt-6" />
 					</template>
 					<template #step3>
 						<ContactStep3 v-model:street="state.street" v-model:addressCity="state.addressCity"
 							v-model:province="state.province" v-model:postalCode="state.postalCode" v-model:radius="state.radius"
-							:errors="errors" class="pt-6" />
+							v-model:radiusOther="state.radiusOther" :errors="errors" class="pt-6" />
 					</template>
 					<template #step4>
 						<ContactStep4 v-model:email="state.email" v-model:whatsapp="state.whatsapp"
-							v-model:contactPreference="state.contactPreference" v-model:notes="state.notes" :errors="errors"
+							v-model:contactPreference="state.contactPreference" v-model:notes="state.notes"
+							v-model:acceptTerms="state.acceptTerms" v-model:acceptPrivacy="state.acceptPrivacy"
+							v-model:acceptMarketing="state.acceptMarketing" @photo-selected="photoFile = $event" :errors="errors"
 							class="pt-6" />
 					</template>
 				</UStepper>
@@ -87,6 +90,7 @@ const TOTAL_STEPS = 4
 const currentStep = ref(1)
 const sending = ref(false)
 const submitted = ref(false)
+const photoFile = ref<File | null>(null)
 
 const state = reactive({
 	fullName: "",
@@ -95,6 +99,7 @@ const state = reactive({
 	requestType: "",
 	object: "",
 	category: "",
+	categoryOther: "",
 	duration: "",
 	durationOther: "",
 	street: "",
@@ -102,10 +107,15 @@ const state = reactive({
 	province: "",
 	postalCode: "",
 	radius: "",
+	radiusOther: "",
 	email: "",
 	whatsapp: "",
 	contactPreference: "",
-	notes: ""
+	notes: "",
+	acceptTerms: false,
+	acceptPrivacy: false,
+	acceptMarketing: false,
+	photoUrl: ""
 })
 
 const errors = reactive<Record<string, string>>({})
@@ -126,7 +136,8 @@ const stepperItems = computed(() => [
 
 const requestTypeOptions = [
 	{ value: "prendo_in_prestito", label: "PRENDO IN PRESTITO" },
-	{ value: "presto", label: "PRESTO" }
+	{ value: "presto", label: "PRESTO" },
+	{ value: "entrambi", label: "ENTRAMBI" }
 ]
 const categoryOptions = [
 	{ value: "bricolage", label: "Bricolage" },
@@ -143,7 +154,8 @@ const durationOptions = [
 const radiusOptions = [
 	{ value: "1km_5km", label: "1 km - 5 km" },
 	{ value: "5km_8km", label: "5 km - 8 km" },
-	{ value: "8km_12km", label: "8 km - 12 km" }
+	{ value: "8km_12km", label: "8 km - 12 km" },
+	{ value: "altro", label: "Altro" }
 ]
 const contactPreferenceOptions = [
 	{ value: "email", label: "Email" },
@@ -154,9 +166,9 @@ const contactPreferenceOptions = [
 function validateStep(step: number): boolean {
 	const stepKeys: Record<number, string[]> = {
 		1: ["fullName", "document", "city"],
-		2: ["requestType", "object", "category", "duration", "durationOther"],
-		3: ["street", "addressCity", "province", "postalCode", "radius"],
-		4: ["email", "contactPreference"]
+		2: ["requestType", "object", "category", "categoryOther", "duration", "durationOther"],
+		3: ["street", "addressCity", "province", "postalCode", "radius", "radiusOther"],
+		4: ["email", "contactPreference", "acceptTerms", "acceptPrivacy"]
 	}
 	for (const key of stepKeys[step]) delete errors[key]
 
@@ -186,6 +198,9 @@ function validateStep(step: number): boolean {
 		if (!state.category) {
 			errors.category = t("contactForm.errors.category"); valid = false
 		}
+		if (state.category === "altro" && !state.categoryOther.trim()) {
+			errors.categoryOther = t("contactForm.errors.categoryOther"); valid = false
+		}
 		if (!state.duration) {
 			errors.duration = t("contactForm.errors.duration"); valid = false
 		}
@@ -209,6 +224,9 @@ function validateStep(step: number): boolean {
 		if (!state.radius) {
 			errors.radius = t("contactForm.errors.radius"); valid = false
 		}
+		if (state.radius === "altro" && !state.radiusOther.trim()) {
+			errors.radiusOther = t("contactForm.errors.radiusOther"); valid = false
+		}
 	}
 	if (step === 4) {
 		const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
@@ -217,6 +235,12 @@ function validateStep(step: number): boolean {
 		}
 		if (!state.contactPreference) {
 			errors.contactPreference = t("contactForm.errors.contactPreference"); valid = false
+		}
+		if (!state.acceptTerms) {
+			errors.acceptTerms = t("contactForm.errors.acceptTerms"); valid = false
+		}
+		if (!state.acceptPrivacy) {
+			errors.acceptPrivacy = t("contactForm.errors.acceptPrivacy"); valid = false
 		}
 	}
 
@@ -233,10 +257,10 @@ function labelFor(options: { value: string; label: string }[], value: string): s
 
 function buildTemplateParams() {
 	const requestTypeLabel = labelFor(requestTypeOptions, state.requestType)
-	const categoryLabel = labelFor(categoryOptions, state.category)
+	const categoryLabel = state.category === "altro" ? state.categoryOther : labelFor(categoryOptions, state.category)
 	const durationLabel =
 		state.duration === "altro" ? state.durationOther : labelFor(durationOptions, state.duration)
-	const radiusLabel = labelFor(radiusOptions, state.radius)
+	const radiusLabel = state.radius === "altro" ? state.radiusOther : labelFor(radiusOptions, state.radius)
 	const preferenceLabel = labelFor(contactPreferenceOptions, state.contactPreference)
 	const now = new Date().toLocaleString("it-IT")
 
@@ -256,9 +280,12 @@ function buildTemplateParams() {
 		postalCode: state.postalCode,
 		radius: radiusLabel,
 		email: state.email,
+		reply_to: state.email,
 		whatsapp: state.whatsapp || "-",
 		contact_preference: preferenceLabel,
 		notes: state.notes || "-",
+		photo_url: state.photoUrl || "-",
+		marketing_consent: state.acceptMarketing ? "Sì" : "No",
 		submitted_at: now,
 		// TSV row for Excel — single field in the template
 		excel_row: [
@@ -266,6 +293,7 @@ function buildTemplateParams() {
 			requestTypeLabel, state.object, categoryLabel, durationLabel,
 			`${state.street}, ${state.postalCode} ${state.addressCity} (${state.province.toUpperCase()})`, radiusLabel,
 			state.email, state.whatsapp || "", preferenceLabel, state.notes || "",
+			state.photoUrl || "", state.acceptMarketing ? "Sì" : "No",
 			now
 		].join("\t")
 	}
@@ -275,8 +303,21 @@ async function onSubmit() {
 	if (!validateStep(4)) return
 	sending.value = true
 	try {
+		if (photoFile.value && config.public.imgbbApiKey) {
+			try {
+				const formData = new FormData()
+				formData.append("image", photoFile.value)
+				const res = await fetch(`https://api.imgbb.com/1/upload?key=${config.public.imgbbApiKey}`, {
+					method: "POST",
+					body: formData
+				})
+				const data = await res.json()
+				if (data.success) state.photoUrl = data.data.url
+			} catch {
+				// Photo upload failed — proceed without image
+			}
+		}
 		const params = buildTemplateParams()
-		console.log("[EmailJS] template params:", params)
 		await emailjs.send(
 			config.public.emailjsServiceId,
 			config.public.emailjsTemplateId,
@@ -295,10 +336,12 @@ async function onSubmit() {
 function resetForm() {
 	Object.assign(state, {
 		fullName: "", document: "", city: "",
-		requestType: "", object: "", category: "", duration: "", durationOther: "",
-		street: "", addressCity: "", province: "", postalCode: "", radius: "",
-		email: "", whatsapp: "", contactPreference: "", notes: ""
+		requestType: "", object: "", category: "", categoryOther: "", duration: "", durationOther: "",
+		street: "", addressCity: "", province: "", postalCode: "", radius: "", radiusOther: "",
+		email: "", whatsapp: "", contactPreference: "", notes: "",
+		acceptTerms: false, acceptPrivacy: false, acceptMarketing: false, photoUrl: ""
 	})
+	photoFile.value = null
 	for (const key in errors) delete errors[key]
 	currentStep.value = 1
 	submitted.value = false

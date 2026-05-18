@@ -23,6 +23,12 @@
       </div>
     </UFormField>
 
+    <UFormField v-if="category === 'altro'" :label="t('contactForm.fields.categoryOtherLabel')"
+      :error="errors.categoryOther" name="categoryOther">
+      <UInput v-model="categoryOther" size="md" :placeholder="t('contactForm.fields.categoryOtherPlaceholder')"
+        class="w-full" />
+    </UFormField>
+
     <UFormField :label="t('contactForm.fields.duration')" :error="errors.duration" name="duration">
       <div class="flex gap-2 flex-wrap">
         <UButton v-for="opt in durationOptions" :key="opt.value" :variant="duration === opt.value ? 'solid' : 'outline'"
@@ -49,6 +55,7 @@ const { t } = useI18n()
 const requestType = defineModel<string>("requestType", { required: true })
 const objectItem = defineModel<string>("object", { required: true })
 const category = defineModel<string>("category", { required: true })
+const categoryOther = defineModel<string>("categoryOther", { required: true })
 const duration = defineModel<string>("duration", { required: true })
 const durationOther = defineModel<string>("durationOther", { required: true })
 
@@ -56,7 +63,8 @@ defineProps<{ errors: Record<string, string> }>()
 
 const requestTypeOptions = computed(() => [
   { value: "prendo_in_prestito", label: t("contactForm.fields.requestTypeBorrow") },
-  { value: "presto", label: t("contactForm.fields.requestTypeLend") }
+  { value: "presto", label: t("contactForm.fields.requestTypeLend") },
+  { value: "entrambi", label: t("contactForm.fields.requestTypeBoth") }
 ])
 
 const categoryOptions = computed(() => [
