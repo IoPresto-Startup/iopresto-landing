@@ -17,6 +17,16 @@
 							$t("footer.contattaci")
 						}}</NuxtLink>
 					</li>
+					<li>
+						<a href="/docs/informativa-privacy-iopresto.docx" target="_blank" class="hover:underline">{{
+							$t("footer.privacy")
+						}}</a>
+					</li>
+					<li>
+						<a href="/docs/Termini-e-condizioni-iopresto.docx" target="_blank" class="hover:underline">{{
+							$t("footer.termini")
+						}}</a>
+					</li>
 				</ul>
 			</div>
 			<!-- Contacts -->

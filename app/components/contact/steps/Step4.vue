@@ -43,8 +43,9 @@
           <UCheckbox v-model="acceptTerms" name="acceptTerms" class="mt-0.5" />
           <span class="text-sm leading-snug">
             {{ t('contactForm.fields.acceptTermsPrefix') }}
-            <NuxtLink to="/termini" target="_blank" class="underline text-primary hover:text-primary/80">{{
-              t('contactForm.fields.acceptTermsLink') }}</NuxtLink>
+            <a href="/docs/Termini-e-condizioni-iopresto.docx" target="_blank"
+              class="underline text-primary hover:text-primary/80">{{
+                t('contactForm.fields.acceptTermsLink') }}</a>
             <span class="text-red-500 ml-0.5">*</span>
           </span>
         </div>
@@ -56,8 +57,9 @@
           <UCheckbox v-model="acceptPrivacy" name="acceptPrivacy" class="mt-0.5" />
           <span class="text-sm leading-snug">
             {{ t('contactForm.fields.acceptPrivacyPrefix') }}
-            <NuxtLink to="/privacy" target="_blank" class="underline text-primary hover:text-primary/80">{{
-              t('contactForm.fields.acceptPrivacyLink') }}</NuxtLink>
+            <a href="/docs/informativa-privacy-iopresto.docx" target="_blank"
+              class="underline text-primary hover:text-primary/80">{{
+                t('contactForm.fields.acceptPrivacyLink') }}</a>
             <span class="text-red-500 ml-0.5">*</span>
           </span>
         </div>
