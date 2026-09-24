@@ -24,12 +24,6 @@
         "supportedBy": "SUPPORTED BY",
         "incubationProgram": "Incubation program in progress"
     },
-    "heroBanner": {
-        "startAdventure": "START YOUR ADVENTURE",
-        "title": "Explore our platform",
-        "description": "Borrow, swap, and share used items, for free and with ease",
-        "cta": "Contact Us"
-    },
     "heroSection": {
         "followUs": "Follow Us",
         "title": "IOPRESTO",
@@ -179,13 +173,6 @@
         "title": "Terms & Conditions",
         "intro": "Read our Terms & Conditions before using the platform.",
         "download": "Download Terms & Conditions (PDF)"
-    },
-    "pageHero": {
-        "home": "Home",
-        "pages": {
-            "esg": "ESG",
-            "contattaci": "Contact Us"
-        }
     },
     "objectives": {
         "title": "Development Goals",

@@ -24,12 +24,6 @@
 		"supportedBy": "SUPPORTATI DA",
 		"incubationProgram": "Programma di incubazione in corso"
 	},
-	"heroBanner": {
-		"startAdventure": "INIZIA LA TUA AVVENTURA",
-		"title": "Esplora la nostra piattaforma",
-		"description": "Prendi in prestito, scambia e condividi oggetti usati, gratis e con semplicità",
-		"cta": "Contattaci"
-	},
 	"heroSection": {
 		"followUs": "Seguici",
 		"title": "IOPRESTO",
@@ -179,13 +173,6 @@
 		"title": "Termini e Condizioni",
 		"intro": "Leggi i nostri Termini e Condizioni prima di utilizzare la piattaforma.",
 		"download": "Scarica Termini e Condizioni (PDF)"
-	},
-	"pageHero": {
-		"home": "Casa",
-		"pages": {
-			"esg": "ESG",
-			"contattaci": "Contattaci"
-		}
 	},
 	"objectives": {
 		"title": "Obbiettivi di sviluppo",

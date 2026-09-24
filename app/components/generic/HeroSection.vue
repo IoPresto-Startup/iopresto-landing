@@ -5,13 +5,23 @@ const { $viewport } = useNuxtApp()
 
 const heroImg = {
 	mobile: "/img/hero/hero-sfondo-mobile.webp",
-	desktop: "/img/hero/hero-sfondo.webp"
+	desktop: "/img/hero/hero-sfondo.webp",
+	desktopSm: "/img/hero/hero-sfondo-1280.webp"
 }
+
+const desktopSrcset = `${heroImg.desktopSm} 1280w, ${heroImg.desktop} 1920w`
 
 useHead({
 	link: [
-		{ rel: "preload", as: "image", href: heroImg.mobile, media: "(max-width: 767px)" },
-		{ rel: "preload", as: "image", href: heroImg.desktop, media: "(min-width: 768px)" }
+		{ rel: "preload", as: "image", href: heroImg.mobile, media: "(max-width: 767px)", fetchpriority: "high" },
+		{
+			rel: "preload",
+			as: "image",
+			imagesrcset: desktopSrcset,
+			imagesizes: "100vw",
+			media: "(min-width: 768px)",
+			fetchpriority: "high"
+		}
 	]
 })
 
@@ -35,6 +45,8 @@ const buttonSize = computed(() => {
 						<source media="(max-width: 767px)" :srcset="heroImg.mobile" type="image/webp" />
 						<img
 							:src="heroImg.desktop"
+							:srcset="desktopSrcset"
+							sizes="100vw"
 							alt=""
 							width="1920"
 							height="1280"
