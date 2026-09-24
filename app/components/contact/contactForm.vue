@@ -280,7 +280,7 @@ function buildTemplateParams() {
 		postalCode: state.postalCode,
 		radius: radiusLabel,
 		email: state.email,
-		reply_to: state.email,
+		reply_to: "infoiopresto@gmail.com",
 		whatsapp: state.whatsapp || "-",
 		contact_preference: preferenceLabel,
 		notes: state.notes || "-",

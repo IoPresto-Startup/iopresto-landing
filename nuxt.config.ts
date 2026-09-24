@@ -94,6 +94,16 @@ export default defineNuxtConfig({
 			"2xl": 1536
 		}
 	},
+	fonts: {
+		families: [
+			{
+				name: "Plus Jakarta Sans",
+				provider: "google",
+				weights: [400, 500, 600, 700, 800],
+				subsets: ["latin"]
+			}
+		]
+	},
 	runtimeConfig: {
 		public: {
 			emailjsServiceId: "",
