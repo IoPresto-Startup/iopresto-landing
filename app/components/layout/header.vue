@@ -13,7 +13,7 @@
 		<template #right>
 			<UColorModeButton color="primary" />
 			<UDropdownMenu :items="dropDownItems">
-				<UButton icon="i-lucide-languages" variant="ghost" />
+				<UButton icon="i-lucide-languages" variant="ghost" :aria-label="$t('a11y.changeLanguage')" />
 			</UDropdownMenu>
 		</template>
 

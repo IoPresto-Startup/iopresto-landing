@@ -3,6 +3,13 @@ import BaseCard from "./BaseCard.vue"
 
 const { $viewport } = useNuxtApp()
 
+useHead({
+	link: [
+		{ rel: "preload", as: "image", href: "/img/hero/hero-sfondo-mobile.webp", media: "(max-width: 767px)" },
+		{ rel: "preload", as: "image", href: "/img/hero/hero-sfondo.webp", media: "(min-width: 768px)" }
+	]
+})
+
 const mapUrl = "https://paa.ge/iopresto/it/map?previous=/"
 
 const buttonSize = computed(() => {
@@ -19,11 +26,17 @@ const buttonSize = computed(() => {
 		<BaseCard class="relative overflow-hidden" :ui-class="{ body: '!p-0' }">
 			<template #content>
 				<div class="relative min-h-[26rem] md:min-h-[32rem] lg:min-h-[36rem]">
-					<NuxtImg
-						src="/img/hero/hero-sfondo.jpg"
-						alt=""
-						class="absolute inset-0 h-full w-full object-cover"
-					/>
+					<picture>
+						<source media="(max-width: 767px)" srcset="/img/hero/hero-sfondo-mobile.webp" type="image/webp" />
+						<img
+							src="/img/hero/hero-sfondo.webp"
+							alt=""
+							width="1920"
+							height="1280"
+							fetchpriority="high"
+							class="absolute inset-0 h-full w-full object-cover"
+						/>
+					</picture>
 					<div
 						class="absolute inset-0"
 						style="

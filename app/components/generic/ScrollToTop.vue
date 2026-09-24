@@ -4,9 +4,9 @@
 			<UButton
 				icon="i-heroicons-arrow-up"
 				size="lg"
-				aria-label="Torna su"
+				:aria-label="$t('a11y.scrollToTop')"
 				@click="scrollToTop"
-				class="fixed bottom-20 right-6 z-50 rounded-full bg-default/75 backdrop-blur border-b border-default shadow-[0_4px_24px_0_rgba(56,189,248,0.5)] text-secondary-300 hover:bg-secondary-400/20 hover:text-secondary-500 transition-all duration-300"
+				class="fixed bottom-20 right-6 z-50 rounded-full bg-default/75 backdrop-blur border-b border-default shadow-[0_4px_24px_0_rgba(56,189,248,0.5)] text-secondary-600 hover:bg-secondary-400/20 hover:text-secondary-700 transition-colors duration-300"
 			/>
 		</div>
 	</Transition>

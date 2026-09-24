@@ -246,5 +246,9 @@
             "title": "Lend with us",
             "description": "Fill in the form and tell us what you want to lend or borrow. We'll get back to you to arrange the loan between individuals, for free. Live in Florence and Trento."
         }
+    },
+    "a11y": {
+        "changeLanguage": "Change language",
+        "scrollToTop": "Back to top"
     }
 }

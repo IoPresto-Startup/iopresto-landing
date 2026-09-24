@@ -246,5 +246,9 @@
 			"title": "Presta con noi",
 			"description": "Compila il form e raccontaci cosa vuoi prestare o prendere in prestito. Ti ricontattiamo per organizzare il prestito tra privati, gratis. Attivo a Firenze e Trento."
 		}
+	},
+	"a11y": {
+		"changeLanguage": "Cambia lingua",
+		"scrollToTop": "Torna su"
 	}
 }
