@@ -5,7 +5,7 @@
 		>
 			<div class="md:col-span-2 lg:col-span-1">
 				<div class="flex min-h-11 items-center gap-3 mb-5">
-					<NuxtImg src="/img/iopresto_logo_2.png" alt="IoPresto" width="56" height="40" class="h-10 w-auto" />
+					<NuxtImg src="/img/iopresto_logo_2.webp" alt="IoPresto" width="56" height="40" class="h-10 w-auto" />
 					<h2 class="text-2xl font-bold">{{ $t("heroSection.title") }}</h2>
 				</div>
 				<p class="mb-2 text-sm max-w-md">{{ $t("footer.value") }}</p>

@@ -3,10 +3,15 @@ import BaseCard from "./BaseCard.vue"
 
 const { $viewport } = useNuxtApp()
 
+const heroImg = {
+	mobile: "/img/hero/hero-sfondo-mobile.webp",
+	desktop: "/img/hero/hero-sfondo.webp"
+}
+
 useHead({
 	link: [
-		{ rel: "preload", as: "image", href: "/img/hero/hero-sfondo-mobile.webp", media: "(max-width: 767px)" },
-		{ rel: "preload", as: "image", href: "/img/hero/hero-sfondo.webp", media: "(min-width: 768px)" }
+		{ rel: "preload", as: "image", href: heroImg.mobile, media: "(max-width: 767px)" },
+		{ rel: "preload", as: "image", href: heroImg.desktop, media: "(min-width: 768px)" }
 	]
 })
 
@@ -27,9 +32,9 @@ const buttonSize = computed(() => {
 			<template #content>
 				<div class="relative min-h-[26rem] md:min-h-[32rem] lg:min-h-[36rem]">
 					<picture>
-						<source media="(max-width: 767px)" srcset="/img/hero/hero-sfondo-mobile.webp" type="image/webp" />
+						<source media="(max-width: 767px)" :srcset="heroImg.mobile" type="image/webp" />
 						<img
-							src="/img/hero/hero-sfondo.webp"
+							:src="heroImg.desktop"
 							alt=""
 							width="1920"
 							height="1280"

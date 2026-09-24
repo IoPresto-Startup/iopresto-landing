@@ -2,9 +2,11 @@
 	<UHeader>
 		<template #title>
 			<NuxtImg
-				src="/img/iopresto_logo_2.png"
+				src="/img/iopresto_logo_2.webp"
 				alt="Io Presto"
-				class="h-12"
+				width="67"
+				height="48"
+				class="h-12 w-auto"
 			/>
 		</template>
 

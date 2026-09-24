@@ -15,6 +15,7 @@
 					alt="Chi siamo"
 					width="626"
 					height="418"
+					densities="1x"
 					class="basis-[45%] w-full max-h-[18rem] rounded object-cover md:h-full"
 				/>
 			</div>
