@@ -29,10 +29,10 @@ const mapUrl = "https://paa.ge/iopresto/it/map?previous=/"
 
 const buttonSize = computed(() => {
 	if ($viewport.isGreaterOrEquals("xl")) return "xl"
-	if ($viewport.isGreaterOrEquals("lg")) return "lg"
-	if ($viewport.isGreaterOrEquals("md")) return "md"
-	if ($viewport.isGreaterOrEquals("sm")) return "sm"
-	return "xs"
+	if ($viewport.isGreaterOrEquals("lg")) return "xl"
+	if ($viewport.isGreaterOrEquals("md")) return "xl"
+	if ($viewport.isGreaterOrEquals("sm")) return "lg"
+	return "lg"
 })
 </script>
 

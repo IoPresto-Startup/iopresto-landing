@@ -26,7 +26,13 @@
 
 			<!-- Wizard -->
 			<template v-else>
-				<UStepper v-model="stepperIndex" :items="stepperItems" disabled class="w-full">
+				<UStepper
+					v-model="stepperIndex"
+					:items="stepperItems"
+					disabled
+					size="lg"
+					class="w-full text-base md:text-lg"
+				>
 					<template #step1>
 						<ContactStep1 v-model:fullName="state.fullName" v-model:document="state.document" v-model:city="state.city"
 							:errors="errors" class="pt-6" />
@@ -53,15 +59,15 @@
 
 				<!-- Navigation -->
 				<div class="flex justify-between mt-8 gap-3">
-					<UButton v-if="currentStep > 1" variant="outline" color="neutral" size="lg" @click="currentStep--">
+					<UButton v-if="currentStep > 1" variant="outline" color="neutral" size="xl" @click="currentStep--">
 						{{ t("contactForm.nav.back") }}
 					</UButton>
 					<div v-else />
 
-					<UButton v-if="currentStep < TOTAL_STEPS" color="primary" variant="solid" size="lg" @click="nextStep">
+					<UButton v-if="currentStep < TOTAL_STEPS" color="primary" variant="solid" size="xl" @click="nextStep">
 						{{ t("contactForm.nav.next") }}
 					</UButton>
-					<UButton v-else color="primary" variant="solid" size="lg" :disabled="sending" @click="onSubmit">
+					<UButton v-else color="primary" variant="solid" size="xl" :disabled="sending" @click="onSubmit">
 						<span v-if="!sending">{{ t("contactForm.nav.submit") }}</span>
 						<span v-else>{{ t("contactForm.nav.sending") }}</span>
 					</UButton>
@@ -346,6 +352,7 @@ async function onSubmit() {
 		sending.value = false
 	}
 }
+
 
 function resetForm() {
 	Object.assign(state, {

@@ -28,7 +28,7 @@
 }
 
 .simple-title {
-	@apply font-bold text-primary-700 text-4xl;
+  @apply font-bold text-primary-700 text-4xl;
 }
 
 /* Scrollbar globale: track trasparente, solo il pollice grigio arrotondato */

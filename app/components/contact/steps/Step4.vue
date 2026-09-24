@@ -1,12 +1,12 @@
 <template>
   <div class="space-y-5">
     <UFormField :label="t('contactForm.fields.email')" :error="errors.email" name="email">
-      <UInput v-model="email" type="email" size="md" :placeholder="t('contactForm.fields.emailPlaceholder')"
+      <UInput v-model="email" type="email" size="lg" :placeholder="t('contactForm.fields.emailPlaceholder')"
         class="w-full" />
     </UFormField>
 
     <UFormField :label="t('contactForm.fields.whatsapp')" name="whatsapp">
-      <UInput v-model="whatsapp" type="tel" size="md" :placeholder="t('contactForm.fields.whatsappPlaceholder')"
+      <UInput v-model="whatsapp" type="tel" size="lg" :placeholder="t('contactForm.fields.whatsappPlaceholder')"
         class="w-full" />
     </UFormField>
 
@@ -14,7 +14,7 @@
       name="contactPreference">
       <div class="flex gap-2 flex-wrap">
         <UButton v-for="opt in contactPreferenceOptions" :key="opt.value"
-          :variant="contactPreference === opt.value ? 'solid' : 'outline'" color="primary" size="md"
+          :variant="contactPreference === opt.value ? 'solid' : 'outline'" color="primary" size="lg"
           @click="contactPreference = opt.value">
           {{ opt.label }}
         </UButton>

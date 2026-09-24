@@ -1,23 +1,23 @@
 <template>
   <div class="space-y-5">
     <UFormField :label="t('contactForm.fields.street')" :error="errors.street" name="street">
-      <UInput v-model="street" size="md" :placeholder="t('contactForm.fields.streetPlaceholder')" class="w-full" />
+      <UInput v-model="street" size="lg" :placeholder="t('contactForm.fields.streetPlaceholder')" class="w-full" />
     </UFormField>
 
     <div class="grid grid-cols-2 gap-3">
       <UFormField :label="t('contactForm.fields.postalCode')" :error="errors.postalCode" name="postalCode">
-        <UInput v-model="postalCode" size="md" :placeholder="t('contactForm.fields.postalCodePlaceholder')"
+        <UInput v-model="postalCode" size="lg" :placeholder="t('contactForm.fields.postalCodePlaceholder')"
           maxlength="5" inputmode="numeric" class="w-full"
           @input="postalCode = ($event.target as HTMLInputElement).value.replace(/\D/g, '').slice(0, 5)" />
       </UFormField>
       <UFormField :label="t('contactForm.fields.addressCity')" :error="errors.addressCity" name="addressCity">
-        <UInput v-model="addressCity" size="md" :placeholder="t('contactForm.fields.addressCityPlaceholder')"
+        <UInput v-model="addressCity" size="lg" :placeholder="t('contactForm.fields.addressCityPlaceholder')"
           class="w-full" />
       </UFormField>
     </div>
 
     <UFormField :label="t('contactForm.fields.province')" :error="errors.province" name="province">
-      <UInput v-model="province" size="md" :placeholder="t('contactForm.fields.provincePlaceholder')" maxlength="2"
+      <UInput v-model="province" size="lg" :placeholder="t('contactForm.fields.provincePlaceholder')" maxlength="2"
         class="w-full uppercase"
         @input="province = ($event.target as HTMLInputElement).value.toUpperCase().replace(/[^A-Za-z]/g, '').slice(0, 2)" />
     </UFormField>
@@ -25,7 +25,7 @@
     <UFormField :label="t('contactForm.fields.radius')" :error="errors.radius" name="radius">
       <div class="flex gap-2 flex-wrap">
         <UButton v-for="opt in radiusOptions" :key="opt.value" :variant="radius === opt.value ? 'solid' : 'outline'"
-          color="primary" size="md" @click="radius = opt.value">
+          color="primary" size="lg" @click="radius = opt.value">
           {{ opt.label }}
         </UButton>
       </div>
@@ -33,7 +33,7 @@
 
     <UFormField v-if="radius === 'altro'" :label="t('contactForm.fields.radiusOtherLabel')" :error="errors.radiusOther"
       name="radiusOther">
-      <UInput v-model="radiusOther" size="md" :placeholder="t('contactForm.fields.radiusOtherPlaceholder')"
+      <UInput v-model="radiusOther" size="lg" :placeholder="t('contactForm.fields.radiusOtherPlaceholder')"
         class="w-full" />
     </UFormField>
   </div>

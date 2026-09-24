@@ -1,10 +1,18 @@
 <template>
   <GenericBaseCard :title="$t('faq.title')">
     <template #content>
-      <UAccordion :items="faqItems" class="mt-2" />
+      <UAccordion
+        :items="faqItems"
+        class="mt-2"
+        :ui="{
+          trigger: 'text-base md:text-lg py-4 font-semibold',
+          body: 'text-base md:text-lg pb-4 leading-relaxed',
+          trailingIcon: 'size-6'
+        }"
+      />
       <div class="flex justify-center mt-6">
         <UButton as="a" href="https://wa.me/393245499866" target="_blank" rel="noopener noreferrer" color="primary"
-          variant="solid" size="lg" icon="i-simple-icons-whatsapp">
+          variant="solid" size="xl" icon="i-simple-icons-whatsapp">
           {{ $t('faq.whatsappCta') }}
         </UButton>
       </div>

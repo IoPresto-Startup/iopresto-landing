@@ -1,19 +1,19 @@
 <template>
   <div class="space-y-5">
     <UFormField :label="t('contactForm.fields.fullName')" :error="errors.fullName" name="fullName">
-      <UInput v-model="fullName" size="md" :placeholder="t('contactForm.fields.fullNamePlaceholder')" class="w-full" />
+      <UInput v-model="fullName" size="lg" :placeholder="t('contactForm.fields.fullNamePlaceholder')" class="w-full" />
     </UFormField>
 
     <UFormField :label="t('contactForm.fields.document')" :error="errors.document"
       :hint="t('contactForm.fields.documentHelp')" name="document">
-      <UInput v-model="documentNumber" size="md" :placeholder="t('contactForm.fields.documentPlaceholder')"
+      <UInput v-model="documentNumber" size="lg" :placeholder="t('contactForm.fields.documentPlaceholder')"
         class="w-full" />
     </UFormField>
 
     <UFormField :label="t('contactForm.fields.city')" :error="errors.city" name="city">
       <div class="flex gap-3 flex-wrap">
         <UButton v-for="c in ['Firenze', 'Trento']" :key="c" :variant="city === c ? 'solid' : 'outline'" color="primary"
-          size="md" @click="city = c">
+          size="lg" @click="city = c">
           {{ c }}
         </UButton>
       </div>

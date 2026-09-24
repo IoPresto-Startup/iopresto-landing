@@ -3,7 +3,7 @@
     <UFormField :label="t('contactForm.fields.requestType')" :error="errors.requestType" name="requestType">
       <div class="flex gap-3 flex-wrap">
         <UButton v-for="opt in requestTypeOptions" :key="opt.value"
-          :variant="requestType === opt.value ? 'solid' : 'outline'" color="primary" size="md"
+          :variant="requestType === opt.value ? 'solid' : 'outline'" color="primary" size="lg"
           @click="requestType = opt.value">
           {{ opt.label }}
         </UButton>
@@ -11,13 +11,13 @@
     </UFormField>
 
     <UFormField :label="t('contactForm.fields.object')" :error="errors.object" name="object">
-      <UInput v-model="objectItem" size="md" :placeholder="t('contactForm.fields.objectPlaceholder')" class="w-full" />
+      <UInput v-model="objectItem" size="lg" :placeholder="t('contactForm.fields.objectPlaceholder')" class="w-full" />
     </UFormField>
 
     <UFormField :label="t('contactForm.fields.category')" :error="errors.category" name="category">
       <div class="flex gap-2 flex-wrap">
         <UButton v-for="opt in categoryOptions" :key="opt.value" :variant="category === opt.value ? 'solid' : 'outline'"
-          color="primary" size="md" @click="category = opt.value">
+          color="primary" size="lg" @click="category = opt.value">
           {{ opt.label }}
         </UButton>
       </div>
@@ -25,14 +25,14 @@
 
     <UFormField v-if="category === 'altro'" :label="t('contactForm.fields.categoryOtherLabel')"
       :error="errors.categoryOther" name="categoryOther">
-      <UInput v-model="categoryOther" size="md" :placeholder="t('contactForm.fields.categoryOtherPlaceholder')"
+      <UInput v-model="categoryOther" size="lg" :placeholder="t('contactForm.fields.categoryOtherPlaceholder')"
         class="w-full" />
     </UFormField>
 
     <UFormField :label="t('contactForm.fields.duration')" :error="errors.duration" name="duration">
       <div class="flex gap-2 flex-wrap">
         <UButton v-for="opt in durationOptions" :key="opt.value" :variant="duration === opt.value ? 'solid' : 'outline'"
-          color="primary" size="md" @click="duration = opt.value">
+          color="primary" size="lg" @click="duration = opt.value">
           {{ opt.label }}
         </UButton>
       </div>
@@ -40,7 +40,7 @@
 
     <UFormField v-if="duration === 'altro'" :label="t('contactForm.fields.durationOther')" :error="errors.durationOther"
       name="durationOther">
-      <UInput v-model="durationOther" size="md" :placeholder="t('contactForm.fields.durationOtherPlaceholder')"
+      <UInput v-model="durationOther" size="lg" :placeholder="t('contactForm.fields.durationOtherPlaceholder')"
         class="w-full" />
     </UFormField>
   </div>
