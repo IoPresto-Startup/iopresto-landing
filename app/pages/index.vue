@@ -11,6 +11,7 @@ defineI18nRoute({
 	<div class="flex flex-col gap-20">
 		<GenericHeroSection />
 		<AboutUs />
+		<HowItWorks />
 		<EsgObjectives />
 		<Reviews />
 		<Faq />

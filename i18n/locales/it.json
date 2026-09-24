@@ -1,7 +1,7 @@
 {
 	"about-us": {
 		"title": "Chi siamo",
-		"real-description": "Siamo una startup innovativa che consente ai residenti in Italia di incontrarsi e prendere in prestito oggetti usati appartenenti a diverse categorie, quali bricolage, attrezzature sportive, utensili da cucina, articoli per il giardinaggio e materiali didattici. L’utente che accede alla nostra piattaforma digitale, dopo essersi registrato, ha la possibilità di pubblicare gli oggetti che non utilizza più e cercare quelli di cui necessita.{space}La comunicazione e la logistica relative al ritiro e alla consegna degli articoli saranno gestite direttamente tra gli utenti, favorendo un’interazione diretta e creando una community. I vantaggi di questa soluzione, in termini di sostenibilità, risultano pienamente allineati con i criteri ESG (Environmental, Social, and Governance). Offrire la possibilità di accedere a beni senza acquistarli genera un impatto ambientale positivo significativo, riducendo lo sfruttamento eccessivo delle risorse naturali e contribuendo alla diminuzione delle emissioni di carbonio.{space}Negli ultimi anni, il tema della sostenibilità e della riduzione degli sprechi ha acquisito un ruolo centrale nelle agende di governi e organizzazioni a livello globale. In Italia, dove il consumo di beni è particolarmente elevato, emergono sfide significative legate all'eccesso di rifiuti e all'utilizzo efficiente delle risorse. Secondo i dati dell'ISPRA (Istituto Superiore per la Protezione e la Ricerca Ambientale), ogni cittadino italiano produce in media circa 499 kg di rifiuti all'anno, molti dei quali potrebbero essere riutilizzati. In questo contesto, iniziative e piattaforme che promuovono l'economia circolare stanno emergendo come soluzioni innovative per ridurre l'impatto ambientale.{space}Lo scopo della nostra piattaforma è ridurre gli acquisti superflui di prodotti a bassa frequenza d’uso, evitando che vengano smaltiti prematuramente, rafforzare i legami sociali e promuovere una cultura basata sulla condivisione e il riutilizzo. Aspiriamo a diventare un punto di riferimento nel settore delle startup sostenibili a Firenze, con l'obiettivo di estendere il nostro impatto in tutta la Toscana e, successivamente, a livello internazionale.",
+		"real-description": "IOPRESTO è un team di persone appassionate di sostenibilità, condivisione ed economia circolare, nato con l'obiettivo di rendere più semplice il prestito di oggetti tra privati.{space}Attraverso la nostra piattaforma digitale, gli utenti possono pubblicare oggetti che non utilizzano più — come utensili, articoli sportivi, materiali da cucina, giardinaggio o studio — e trovare facilmente ciò di cui hanno bisogno senza dover acquistare nuovo.{space}Crediamo nella forza della community e nelle connessioni locali: per questo favoriamo il contatto diretto tra utenti per il ritiro e la consegna degli oggetti, creando relazioni reali e riducendo gli sprechi.{space}Il nostro obiettivo è dare una seconda vita agli oggetti, limitare gli acquisti superflui e promuovere uno stile di vita più sostenibile e collaborativo.{space}Partendo da Firenze, vogliamo costruire una community sempre più grande, con un impatto positivo prima in Toscana e poi in tutta Italia.",
 		"cta": "Scopri di più",
 		"instagram": "ioprestoitalia"
 	},
@@ -16,7 +16,7 @@
 		"contact": "Contact",
 		"email": "{email}",
 		"phone": "+39 324 5499 866",
-		"vatNote": "P. IVA in fase di costituzione",
+		"vatNote": "P. IVA 07554870480",
 		"linkedin": "IoPresto",
 		"privacy": "Politica sulla riservatezza",
 		"termini": "Termini e Condizioni",
@@ -31,9 +31,9 @@
 	"heroSection": {
 		"followUs": "Seguici",
 		"title": "IOPRESTO",
-		"description": "Prendi in prestito, scambia e condividi oggetti usati, gratis e con semplicità",
-		"cta": "Inizia",
-		"coming-soon": "Stiamo lavorando sodo per lanciare la nostra piattaforma digitale. Resta sintonizzato!"
+		"tagline": "Perché comprare, se puoi prenderlo in prestito?",
+		"description": "Trova quello che ti serve. Prendi in prestito da qualcuno vicino a te.",
+		"cta": "Cerca un oggetto"
 	},
 	"contactForm": {
 		"title": "Presta con noi",
@@ -136,10 +136,26 @@
 			"radiusOther": "Specifica la distanza o zona",
 			"acceptTerms": "Devi accettare i Termini e Condizioni per continuare",
 			"acceptPrivacy": "Devi accettare la Privacy Policy per continuare"
-		}
+		},
+		"photoNotSentTitle": "Foto non caricata",
+		"photoNotSentDesc": "Non siamo riusciti a caricare la foto dell'oggetto. La richiesta verrà inviata comunque, senza immagine."
 	},
 	"reviews": {
-		"title": "Cosa dicono di noi"
+		"title": "Cosa dicono di noi",
+		"items": {
+			"r1": {
+				"name": "Marco R.",
+				"text": "Ho trovato esattamente quello che cercavo in pochi minuti. Servizio fantastico!"
+			},
+			"r2": {
+				"name": "Giulia M.",
+				"text": "Finalmente un modo intelligente per condividere oggetti con i vicini. Lo consiglio!"
+			},
+			"r3": {
+				"name": "Luca B.",
+				"text": "Ho prestato il mio trapano tre volte in un mese. Ottima community e persone gentili."
+			}
+		}
 	},
 	"faq": {
 		"title": "Domande frequenti",
@@ -200,6 +216,23 @@
 				"description": "Collaborando con altre organizzazioni, aziende e ONG per promuovere la sostenibilità e l'economia circolare, IOPRESTO contribuisce al rafforzamento delle partnership globali per raggiungere gli obiettivi di sviluppo sostenibile."
 			},
 			"conclusion": "In sintesi, IOPRESTO è allineato principalmente con gli obiettivi 12 (Consumo e produzione responsabili), 13 (Lotta contro il cambiamento climatico) e 8 (Lavoro dignitoso e crescita economica), ma può avere un impatto positivo su molti altri obiettivi legati alla sostenibilità e all'inclusione economica."
+		}
+	},
+	"howItWorks": {
+		"title": "Come funziona?",
+		"steps": {
+			"search": {
+				"label": "CERCA",
+				"description": "Trova l'oggetto che ti serve vicino a te."
+			},
+			"request": {
+				"label": "RICHIEDI",
+				"description": "Contatta il proprietario e concorda il prestito."
+			},
+			"share": {
+				"label": "CONDIVIDI",
+				"description": "Usalo, restituiscilo e dai nuova vita a un oggetto."
+			}
 		}
 	}
 }

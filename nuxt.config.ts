@@ -24,7 +24,39 @@ export default defineNuxtConfig({
 	icon: {
 		mode: "component",
 		clientBundle: {
-			scan: true
+			scan: true,
+			icons: [
+				"heroicons:star-solid",
+				"heroicons:phone",
+				"heroicons:envelope",
+				"heroicons:arrow-up",
+				"heroicons:chevron-right",
+				"heroicons:check-circle",
+				"lucide:map-pin",
+				"lucide:user",
+				"lucide:package",
+				"lucide:phone",
+				"lucide:languages",
+				"lucide:arrow-right",
+				"simple-icons:instagram",
+				"simple-icons:linkedin",
+				"simple-icons:whatsapp",
+				"lucide:sun",
+				"lucide:moon",
+				"lucide:menu",
+				"lucide:x",
+				"lucide:check",
+				"lucide:chevron-down",
+				"lucide:chevron-up",
+				"lucide:chevron-left",
+				"lucide:chevron-right",
+				"lucide:arrow-left",
+				"lucide:arrow-up-right",
+				"lucide:loader-circle",
+				"lucide:circle-check",
+				"lucide:circle-x",
+				"lucide:info"
+			]
 		},
 		serverBundle: {
 			remote: "jsdelivr"

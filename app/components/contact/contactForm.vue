@@ -16,7 +16,7 @@
 
 			<!-- Success screen -->
 			<div v-if="submitted" class="flex flex-col items-center gap-4 py-8 text-center">
-				<UIcon name="heroicons:check-circle" class="text-primary w-14 h-14" />
+				<UIcon name="i-heroicons-check-circle" class="text-primary w-14 h-14" />
 				<h2 class="text-xl font-semibold">{{ t("contactForm.successTitle") }}</h2>
 				<p class="text-sm text-muted max-w-sm">{{ t("contactForm.successDesc") }}</p>
 				<UButton variant="outline" color="primary" @click="resetForm">
@@ -303,18 +303,32 @@ async function onSubmit() {
 	if (!validateStep(4)) return
 	sending.value = true
 	try {
-		if (photoFile.value && config.public.imgbbApiKey) {
-			try {
-				const formData = new FormData()
-				formData.append("image", photoFile.value)
-				const res = await fetch(`https://api.imgbb.com/1/upload?key=${config.public.imgbbApiKey}`, {
-					method: "POST",
-					body: formData
+		if (photoFile.value) {
+			let uploaded = false
+			if (config.public.imgbbApiKey) {
+				try {
+					const formData = new FormData()
+					formData.append("image", photoFile.value)
+					const res = await fetch(`https://api.imgbb.com/1/upload?key=${config.public.imgbbApiKey}`, {
+						method: "POST",
+						body: formData
+					})
+					const data = await res.json()
+					if (data.success) {
+						state.photoUrl = data.data.url
+						uploaded = true
+					}
+				} catch {
+					uploaded = false
+				}
+			}
+			if (!uploaded) {
+				toast.add({
+					title: t("contactForm.photoNotSentTitle"),
+					description: t("contactForm.photoNotSentDesc"),
+					color: "warning",
+					duration: 6000
 				})
-				const data = await res.json()
-				if (data.success) state.photoUrl = data.data.url
-			} catch {
-				// Photo upload failed — proceed without image
 			}
 		}
 		const params = buildTemplateParams()

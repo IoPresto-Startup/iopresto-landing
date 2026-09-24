@@ -16,18 +16,20 @@
 </template>
 
 <script setup lang="ts">
-const reviews = [
+const { t } = useI18n()
+
+const reviews = computed(() => [
   {
-    name: "Marco R.",
-    text: "Ho trovato esattamente quello che cercavo in pochi minuti. Servizio fantastico!"
+    name: t("reviews.items.r1.name"),
+    text: t("reviews.items.r1.text")
   },
   {
-    name: "Giulia M.",
-    text: "Finalmente un modo intelligente per condividere oggetti con i vicini. Lo consiglio!"
+    name: t("reviews.items.r2.name"),
+    text: t("reviews.items.r2.text")
   },
   {
-    name: "Luca B.",
-    text: "Ho prestato il mio trapano tre volte in un mese. Ottima community e persone gentili."
+    name: t("reviews.items.r3.name"),
+    text: t("reviews.items.r3.text")
   }
-]
+])
 </script>

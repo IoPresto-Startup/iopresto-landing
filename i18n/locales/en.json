@@ -1,7 +1,7 @@
 {
     "about-us": {
         "title": "About Us",
-        "real-description": "IOPRESTO è un team di persone appassionate di sostenibilità, condivisione ed economia circolare, nato con l'obiettivo di rendere più semplice il prestito di oggetti tra privati.{space}Attraverso la nostra piattaforma digitale, gli utenti possono pubblicare oggetti che non utilizzano più — come utensili, articoli sportivi, materiali da cucina, giardinaggio o studio — e trovare facilmente ciò di cui hanno bisogno senza dover acquistare nuovo.{space}Crediamo nella forza della community e nelle connessioni locali: per questo favoriamo il contatto diretto tra utenti per il ritiro e la consegna degli oggetti, creando relazioni reali e riducendo gli sprechi.{space}Il nostro obiettivo è dare una seconda vita agli oggetti, limitare gli acquisti superflui e promuovere uno stile di vita più sostenibile e collaborativo.{space}Partendo da Firenze, vogliamo costruire una community sempre più grande, con un impatto positivo prima in Toscana e poi in tutta Italia.",
+        "real-description": "IOPRESTO is a team of people passionate about sustainability, sharing and the circular economy, born with the goal of making lending objects between individuals easier.{space}Through our digital platform, users can list objects they no longer use — such as tools, sports equipment, kitchenware, gardening or study materials — and easily find what they need without buying new.{space}We believe in the power of community and local connections: that is why we encourage direct contact between users for picking up and delivering objects, creating real relationships and reducing waste.{space}Our goal is to give objects a second life, limit unnecessary purchases and promote a more sustainable and collaborative lifestyle.{space}Starting from Florence, we want to build an ever-growing community, with a positive impact first in Tuscany and then throughout Italy.",
         "cta": "Find out more",
         "instagram": "ioprestoitalia"
     },
@@ -16,7 +16,7 @@
         "contact": "Contact",
         "email": "{email}",
         "phone": "+39 324 5499 866",
-        "vatNote": "P. IVA in fase di costituzione",
+        "vatNote": "VAT number 07554870480",
         "linkedin": "IoPresto",
         "privacy": "Privacy Policy",
         "termini": "Terms & Conditions",
@@ -31,136 +31,152 @@
     "heroSection": {
         "followUs": "Follow Us",
         "title": "IOPRESTO",
-        "description": "Borrow, swap, and share used items, for free and with simplicity",
-        "cta": "Start",
-        "coming-soon": "We are working hard to launch our digital platform. Stay tuned!"
+        "tagline": "Why buy, if you can borrow?",
+        "description": "Find what you need. Borrow it from someone near you.",
+        "cta": "Find an item"
     },
     "contactForm": {
-        "title": "Presta con noi",
-        "subtitle": "Hai qualcosa da prestare o cerchi qualcosa da prendere in prestito? Registra la tua richiesta — è gratis e senza impegno.",
-        "cities": "Disponibile a Firenze e Trento",
-        "description": "Chiedi ciò che ti serve di diverse categorie: bricolage, fai da te, utensili di cucina, casa, ecc. Offri ciò che non usi. Zero costi. Solo condivisione.",
+        "title": "Lend with us",
+        "subtitle": "Do you have something to lend, or are you looking for something to borrow? Register your request — it's free and with no obligation.",
+        "cities": "Available in Florence and Trento",
+        "description": "Ask for what you need in many categories: DIY, tools, kitchen utensils, home, etc. Offer what you don't use. Zero costs. Just sharing.",
         "steps": {
-            "step1": "Chi sei?",
-            "step2": "Cosa vuoi fare?",
-            "step3": "Dove sei?",
-            "step4": "Contatti"
+            "step1": "Who are you?",
+            "step2": "What do you want to do?",
+            "step3": "Where are you?",
+            "step4": "Contacts"
         },
         "fields": {
-            "fullName": "Nome e cognome",
-            "fullNamePlaceholder": "Mario Rossi",
-            "document": "Documento d'identità / Codice fiscale",
-            "documentPlaceholder": "Solo il numero",
-            "documentHelp": "Inserisci solo il numero. Il documento completo lo chiederemo dopo.",
-            "city": "Città",
-            "requestType": "Cosa vuoi fare?",
-            "requestTypeBorrow": "PRENDO IN PRESTITO",
-            "requestTypeLend": "PRESTO",
-            "requestTypeBoth": "ENTRAMBI",
-            "object": "Oggetto",
-            "objectPlaceholder": "Es. trapano, pentola a pressione, tenda da campeggio...",
-            "category": "Categoria",
-            "categoryBricolage": "Bricolage",
-            "categoryBooks": "Libri e riviste",
-            "categorySport": "Sport",
-            "categoryOther": "Altro",
-            "categoryOtherLabel": "Specifica la categoria",
-            "categoryOtherPlaceholder": "Es. cucina, giochi, elettronica...",
-            "duration": "Durata",
-            "duration1Day": "1 giorno",
-            "duration3Days": "3 giorni",
-            "duration1Week": "1 settimana",
-            "durationOther": "Altro",
-            "durationOtherPlaceholder": "Specifica la durata...",
-            "street": "Via / Indirizzo",
-            "streetPlaceholder": "Es. Via Roma 12",
-            "postalCode": "CAP",
-            "postalCodePlaceholder": "Es. 50100",
-            "addressCity": "Città",
-            "addressCityPlaceholder": "Es. Firenze",
-            "province": "Provincia",
-            "provincePlaceholder": "Es. FI",
-            "radius": "Quanto potresti spostarti?",
+            "fullName": "Full name",
+            "fullNamePlaceholder": "John Smith",
+            "document": "ID document / Tax code",
+            "documentPlaceholder": "Number only",
+            "documentHelp": "Enter only the number. We will ask for the full document later.",
+            "city": "City",
+            "requestType": "What do you want to do?",
+            "requestTypeBorrow": "BORROW",
+            "requestTypeLend": "LEND",
+            "requestTypeBoth": "BOTH",
+            "object": "Item",
+            "objectPlaceholder": "e.g. drill, pressure cooker, camping tent...",
+            "category": "Category",
+            "categoryBricolage": "DIY",
+            "categoryBooks": "Books and magazines",
+            "categorySport": "Sports",
+            "categoryOther": "Other",
+            "categoryOtherLabel": "Specify the category",
+            "categoryOtherPlaceholder": "e.g. kitchen, games, electronics...",
+            "duration": "Duration",
+            "duration1Day": "1 day",
+            "duration3Days": "3 days",
+            "duration1Week": "1 week",
+            "durationOther": "Other",
+            "durationOtherPlaceholder": "Specify the duration...",
+            "street": "Street / Address",
+            "streetPlaceholder": "e.g. 12 Main Street",
+            "postalCode": "Postal code",
+            "postalCodePlaceholder": "e.g. 50100",
+            "addressCity": "City",
+            "addressCityPlaceholder": "e.g. Florence",
+            "province": "Province",
+            "provincePlaceholder": "e.g. FI",
+            "radius": "How far could you travel?",
             "radius1": "1 km – 5 km",
             "radius2": "5 km – 8 km",
             "radius3": "8 km – 12 km",
-            "radiusOther": "Altro",
-            "radiusOtherLabel": "Specifica la distanza o zona",
-            "radiusOtherPlaceholder": "Es. zona nord Firenze, max 15 km...",
+            "radiusOther": "Other",
+            "radiusOtherLabel": "Specify the distance or area",
+            "radiusOtherPlaceholder": "e.g. north Florence, max 15 km...",
             "email": "Email",
-            "emailPlaceholder": "mario{'@'}esempio.com",
-            "whatsapp": "Numero WhatsApp",
+            "emailPlaceholder": "john{'@'}example.com",
+            "whatsapp": "WhatsApp number",
             "whatsappPlaceholder": "+39 333 000 0000",
-            "contactPreference": "Come preferisci che ti contattiamo?",
+            "contactPreference": "How do you prefer us to contact you?",
             "preferenceEmail": "Email",
             "preferenceWhatsapp": "WhatsApp",
-            "preferenceIndifferent": "Indifferente",
-            "notes": "Note aggiuntive",
-            "notesPlaceholder": "Qualsiasi altra cosa vorresti dirci...",
-            "photo": "Foto dell'oggetto (facoltativa)",
-            "consentsTitle": "Consensi obbligatori",
-            "acceptTermsPrefix": "Ho letto e accetto i",
-            "acceptTermsLink": "Termini e Condizioni",
-            "acceptPrivacyPrefix": "Ho letto e accetto la",
+            "preferenceIndifferent": "No preference",
+            "notes": "Additional notes",
+            "notesPlaceholder": "Anything else you'd like to tell us...",
+            "photo": "Photo of the item (optional)",
+            "consentsTitle": "Required consents",
+            "acceptTermsPrefix": "I have read and accept the",
+            "acceptTermsLink": "Terms & Conditions",
+            "acceptPrivacyPrefix": "I have read and accept the",
             "acceptPrivacyLink": "Privacy Policy",
-            "acceptMarketing": "Acconsento a ricevere comunicazioni promozionali e di marketing (facoltativo)"
+            "acceptMarketing": "I consent to receiving promotional and marketing communications (optional)"
         },
         "nav": {
-            "next": "Avanti",
-            "back": "Indietro",
-            "submit": "Invia richiesta",
-            "sending": "Invio..."
+            "next": "Next",
+            "back": "Back",
+            "submit": "Send request",
+            "sending": "Sending..."
         },
-        "successTitle": "Grazie per averci scritto!",
-        "successDesc": "Grazie per averci scritto e per credere nella sostenibilità. A breve ti contatteremo!",
-        "successReset": "Invia un'altra richiesta",
-        "errorGeneric": "Errore nell'invio. Riprova.",
-        "errorDesc": "Controlla la connessione e riprova. Se il problema persiste, scrivici a support{'@'}iopresto.com.",
+        "successTitle": "Thank you for contacting us!",
+        "successDesc": "Thank you for writing to us and for believing in sustainability. We will get back to you soon!",
+        "successReset": "Send another request",
+        "errorGeneric": "Sending error. Please try again.",
+        "errorDesc": "Check your connection and try again. If the problem persists, write to us at support{'@'}iopresto.com.",
+        "photoNotSentTitle": "Photo not uploaded",
+        "photoNotSentDesc": "We could not upload the photo of the item. Your request will be sent anyway, without the image.",
         "errors": {
-            "fullName": "Inserisci nome e cognome (almeno 2 caratteri)",
-            "document": "Formato non valido: inserisci un codice fiscale (16 caratteri) o il numero del documento",
-            "city": "Seleziona la tua città",
-            "requestType": "Seleziona cosa vuoi fare",
-            "object": "Descrivi l'oggetto (almeno 3 caratteri)",
-            "category": "Seleziona una categoria",
-            "duration": "Seleziona una durata",
-            "durationOther": "Specifica la durata",
-            "street": "Inserisci la via e il numero civico (almeno 3 caratteri)",
-            "addressCity": "Inserisci la città",
-            "province": "Inserisci la sigla della provincia (2 lettere, es. FI)",
-            "postalCode": "Inserisci un CAP valido (5 cifre)",
-            "radius": "Seleziona il raggio di spostamento",
-            "email": "Inserisci un'email valida",
-            "contactPreference": "Seleziona una preferenza di contatto",
-            "categoryOther": "Specifica la categoria",
-            "radiusOther": "Specifica la distanza o zona",
-            "acceptTerms": "Devi accettare i Termini e Condizioni per continuare",
-            "acceptPrivacy": "Devi accettare la Privacy Policy per continuare"
+            "fullName": "Enter your first and last name (at least 2 characters)",
+            "document": "Invalid format: enter a tax code (16 characters) or the document number",
+            "city": "Select your city",
+            "requestType": "Select what you want to do",
+            "object": "Describe the item (at least 3 characters)",
+            "category": "Select a category",
+            "duration": "Select a duration",
+            "durationOther": "Specify the duration",
+            "street": "Enter the street and house number (at least 3 characters)",
+            "addressCity": "Enter the city",
+            "province": "Enter the province code (2 letters, e.g. FI)",
+            "postalCode": "Enter a valid postal code (5 digits)",
+            "radius": "Select your travel radius",
+            "email": "Enter a valid email address",
+            "contactPreference": "Select a contact preference",
+            "categoryOther": "Specify the category",
+            "radiusOther": "Specify the distance or area",
+            "acceptTerms": "You must accept the Terms & Conditions to continue",
+            "acceptPrivacy": "You must accept the Privacy Policy to continue"
         }
     },
     "reviews": {
-        "title": "Cosa dicono di noi"
+        "title": "What people say about us",
+        "items": {
+            "r1": {
+                "name": "Marco R.",
+                "text": "I found exactly what I was looking for in a few minutes. Fantastic service!"
+            },
+            "r2": {
+                "name": "Giulia M.",
+                "text": "Finally a smart way to share objects with neighbours. Highly recommended!"
+            },
+            "r3": {
+                "name": "Luca B.",
+                "text": "I lent my drill three times in one month. Great community and kind people."
+            }
+        }
     },
     "faq": {
-        "title": "Domande frequenti",
-        "whatsappCta": "Hai altre domande? Scrivici su WhatsApp",
-        "q1": "Come funziona IOPRESTO?",
-        "a1": "IOPRESTO è una piattaforma che permette di pubblicare oggetti da prestare e trovare ciò di cui hai bisogno nella tua zona. Il contatto e la logistica avvengono direttamente tra gli utenti.",
-        "q2": "Il servizio è gratuito?",
-        "a2": "Sì, IOPRESTO è completamente gratuito. Non ci sono costi per registrarsi, pubblicare oggetti o prendere in prestito.",
-        "q3": "Come vengono gestiti il ritiro e la consegna?",
-        "a3": "Il ritiro e la consegna vengono concordati direttamente tra l'utente che presta e quello che prende in prestito. IOPRESTO facilita il contatto ma non gestisce la logistica.",
-        "q4": "In quali città è disponibile IOPRESTO?",
-        "a4": "Al momento IOPRESTO è disponibile a Firenze e Trento. Stiamo lavorando per espanderci presto in altre città!"
+        "title": "Frequently asked questions",
+        "whatsappCta": "More questions? Message us on WhatsApp",
+        "q1": "How does IOPRESTO work?",
+        "a1": "IOPRESTO is a platform where you can list objects to lend and find what you need in your area. Contact and logistics happen directly between users.",
+        "q2": "Is the service free?",
+        "a2": "Yes, IOPRESTO is completely free. There are no costs to register, list objects or borrow.",
+        "q3": "How are pickup and delivery handled?",
+        "a3": "Pickup and delivery are arranged directly between the lender and the borrower. IOPRESTO facilitates the contact but does not manage logistics.",
+        "q4": "In which cities is IOPRESTO available?",
+        "a4": "IOPRESTO is currently available in Florence and Trento. We are working to expand to other cities soon!"
     },
     "privacy": {
-        "intro": "Leggi la nostra Privacy Policy per capire come trattiamo i tuoi dati personali.",
-        "download": "Scarica Privacy Policy (PDF)"
+        "intro": "Read our Privacy Policy to understand how we handle your personal data.",
+        "download": "Download Privacy Policy (PDF)"
     },
     "termini": {
-        "title": "Termini e Condizioni",
-        "intro": "Leggi i nostri Termini e Condizioni prima di utilizzare la piattaforma.",
-        "download": "Scarica Termini e Condizioni (PDF)"
+        "title": "Terms & Conditions",
+        "intro": "Read our Terms & Conditions before using the platform.",
+        "download": "Download Terms & Conditions (PDF)"
     },
     "pageHero": {
         "home": "Home",
@@ -200,6 +216,23 @@
                 "description": "By collaborating with other organizations, companies, and NGOs to promote sustainability and the circular economy, IOPRESTO contributes to strengthening global partnerships to achieve sustainable development goals."
             },
             "conclusion": "In summary, IOPRESTO is primarily aligned with goals 12 (Responsible Consumption and Production), 13 (Climate Action), and 8 (Decent Work and Economic Growth), but can have a positive impact on many other goals related to sustainability and economic inclusion."
+        }
+    },
+    "howItWorks": {
+        "title": "How it works?",
+        "steps": {
+            "search": {
+                "label": "SEARCH",
+                "description": "Find the item you need near you."
+            },
+            "request": {
+                "label": "REQUEST",
+                "description": "Contact the owner and arrange the loan."
+            },
+            "share": {
+                "label": "SHARE",
+                "description": "Use it, return it, and give an object a new life."
+            }
         }
     }
 }

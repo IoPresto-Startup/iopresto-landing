@@ -24,9 +24,8 @@ export default defineAppConfig({
 			}
 		},
 		card: {
-			// box-shadow: offset-x offset-y blur-radius spread-radius color;
 			slots: {
-				root: "shadow-[0_0_30px_rgba(0,0,0,0.2)] dark:shadow-[0_0_30px_rgba(0,0,0,0.6)] rounded-lg"
+				root: "shadow-[0_0_30px_rgba(0,0,0,0.2)] dark:shadow-none dark:ring-1 dark:ring-white/10 rounded-lg"
 			}
 		},
 		modal: {

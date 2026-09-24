@@ -12,13 +12,13 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@nuxt/icon": "^2.0.0",
-    "@nuxt/image": "^1.11.0",
-    "@nuxt/ui": "^4.0.0",
+    "@nuxt/image": "^2.1.0",
+    "@nuxt/ui": "^4.11.2",
     "@nuxtjs/i18n": "^10.1.0",
     "@tailwindcss/vite": "^4.1.13",
     "nuxt": "^4.1.2",
     "nuxt-viewport": "^2.3.1",
-    "sharp": "^0.34.4",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4.1.13",
     "valibot": "^1.1.0",
     "vue": "^3.5.21",
@@ -28,5 +28,8 @@
     "@iconify-json/heroicons": "^1.2.3",
     "@iconify-json/lucide": "^1.2.68",
     "@iconify-json/simple-icons": "^1.2.54"
+  },
+  "overrides": {
+    "esbuild": "^0.28.2"
   }
 }
