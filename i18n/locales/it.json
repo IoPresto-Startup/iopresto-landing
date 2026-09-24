@@ -236,5 +236,15 @@
 				"description": "Usalo, restituiscilo e dai nuova vita a un oggetto."
 			}
 		}
+	},
+	"seo": {
+		"home": {
+			"title": "Prendi in prestito oggetti tra privati a Firenze e Trento",
+			"description": "Dai valore agli oggetti che non usi: pubblica, presta e prendi in prestito gratuitamente oggetti tra privati vicino a te. IoPresto è attivo a Firenze e Trento."
+		},
+		"contact": {
+			"title": "Presta con noi",
+			"description": "Compila il form e raccontaci cosa vuoi prestare o prendere in prestito. Ti ricontattiamo per organizzare il prestito tra privati, gratis. Attivo a Firenze e Trento."
+		}
 	}
 }

@@ -236,5 +236,15 @@
                 "description": "Use it, return it, and give an object a new life."
             }
         }
+    },
+    "seo": {
+        "home": {
+            "title": "Borrow items from people near you in Florence and Trento",
+            "description": "Give value to the things you don't use: list, lend and borrow items for free with people near you. IoPresto is live in Florence and Trento."
+        },
+        "contact": {
+            "title": "Lend with us",
+            "description": "Fill in the form and tell us what you want to lend or borrow. We'll get back to you to arrange the loan between individuals, for free. Live in Florence and Trento."
+        }
     }
 }

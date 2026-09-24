@@ -65,21 +65,28 @@ export default defineNuxtConfig({
 	},
 	i18n: {
 		defaultLocale: "it",
+		baseUrl: "https://iopresto.com",
 		locales: [
 			{
 				code: "it",
 				file: "it.json",
-				language: "Italiano",
+				language: "it-IT",
 				name: "Italiano"
 			},
 			{
 				code: "en",
 				file: "en.json",
-				language: "English",
+				language: "en",
 				name: "English"
 			}
 		],
-		langDir: "locales/"
+		langDir: "locales/",
+		detectBrowserLanguage: {
+			useCookie: true,
+			cookieKey: "i18n_redirected",
+			redirectOn: "root",
+			fallbackLocale: "it"
+		}
 	},
 	imports: {
 		autoImport: true
@@ -106,10 +113,16 @@ export default defineNuxtConfig({
 	},
 	runtimeConfig: {
 		public: {
+			siteUrl: "https://iopresto.com",
 			emailjsServiceId: "",
 			emailjsTemplateId: "",
 			emailjsPublicKey: "",
 			imgbbApiKey: ""
+		}
+	},
+	nitro: {
+		prerender: {
+			routes: ["/sitemap.xml"]
 		}
 	}
 })
